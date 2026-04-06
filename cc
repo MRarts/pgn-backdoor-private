@@ -18,7 +18,7 @@ G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 -- StarterGui.Server side executor.Frame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["Visible"] = false;
+G2L["2"]["Active"] = true;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2"]["Size"] = UDim2.new(0, 377, 0, 254);
