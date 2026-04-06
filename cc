@@ -7,1790 +7,182 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 225 | Scripts: 54 | Modules: 8 | Tags: 0
+-- Instances: 25 | Scripts: 2 | Modules: 8 | Tags: 0
 local G2L = {};
 
--- StarterGui.DOMINANTZ
+-- StarterGui.Server side executor
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Name"] = [[DOMINANTZ]];
+G2L["1"]["Name"] = [[Server side executor]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-G2L["1"]["ResetOnSpawn"] = false;
 
 
--- StarterGui.DOMINANTZ.top
+-- StarterGui.Server side executor.Frame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["Visible"] = false;
+G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2"]["Size"] = UDim2.new(0, 644, 0, 28);
-G2L["2"]["Position"] = UDim2.new(0.12636, 0, 0.03685, 0);
-G2L["2"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["2"]["Name"] = [[top]];
+G2L["2"]["Size"] = UDim2.new(0, 377, 0, 254);
+G2L["2"]["Position"] = UDim2.new(0.30682, 0, 0.31821, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
--- StarterGui.DOMINANTZ.top.Drag
-G2L["3"] = Instance.new("LocalScript", G2L["2"]);
-G2L["3"]["Name"] = [[Drag]];
+-- StarterGui.Server side executor.Frame.TextBox
+G2L["3"] = Instance.new("TextBox", G2L["2"]);
+G2L["3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["ClearTextOnFocus"] = false;
+G2L["3"]["Size"] = UDim2.new(0, 351, 0, 170);
+G2L["3"]["Position"] = UDim2.new(0.03448, 0, 0.12598, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[]];
 
 
--- StarterGui.DOMINANTZ.top.ImageLabel
-G2L["4"] = Instance.new("ImageLabel", G2L["2"]);
-G2L["4"]["BorderSizePixel"] = 0;
-G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4"]["ImageColor3"] = Color3.fromRGB(16, 8, 255);
-G2L["4"]["Image"] = [[rbxassetid://86102463824382]];
-G2L["4"]["Size"] = UDim2.new(0, 25, 0, 23);
-G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["BackgroundTransparency"] = 1;
-G2L["4"]["Position"] = UDim2.new(0.00932, 0, 0.0552, 0);
-
-
--- StarterGui.DOMINANTZ.top.close
-G2L["5"] = Instance.new("ImageButton", G2L["2"]);
-G2L["5"]["BorderSizePixel"] = 0;
-G2L["5"]["BackgroundTransparency"] = 1;
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5"]["ImageColor3"] = Color3.fromRGB(113, 113, 113);
-G2L["5"]["Image"] = [[rbxassetid://274958830]];
-G2L["5"]["Size"] = UDim2.new(0, 12, 0, 12);
-G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5"]["Name"] = [[close]];
-G2L["5"]["Position"] = UDim2.new(0.95313, 0, 0.24771, 0);
-
-
--- StarterGui.DOMINANTZ.top.close.LocalScript
-G2L["6"] = Instance.new("LocalScript", G2L["5"]);
+-- StarterGui.Server side executor.Frame.TextBox.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["3"]);
 
 
 
--- StarterGui.DOMINANTZ.top.max
-G2L["7"] = Instance.new("ImageButton", G2L["2"]);
+-- StarterGui.Server side executor.Frame.TextBox.UIStroke
+G2L["5"] = Instance.new("UIStroke", G2L["3"]);
+G2L["5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Server side executor.Frame.UICorner
+G2L["6"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.Server side executor.Frame.exe
+G2L["7"] = Instance.new("TextButton", G2L["2"]);
+G2L["7"]["TextWrapped"] = true;
 G2L["7"]["BorderSizePixel"] = 0;
-G2L["7"]["ImageTransparency"] = 0.6;
-G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7"]["ImageColor3"] = Color3.fromRGB(113, 113, 113);
-G2L["7"]["Image"] = [[rbxassetid://14953690282]];
-G2L["7"]["Size"] = UDim2.new(0, 12, 0, 12);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["Size"] = UDim2.new(0, 113, 0, 33);
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Name"] = [[max]];
-G2L["7"]["Position"] = UDim2.new(0.88668, 0, 0.24771, 0);
+G2L["7"]["Text"] = [[EXECUTE]];
+G2L["7"]["Name"] = [[exe]];
+G2L["7"]["Position"] = UDim2.new(0.06897, 0, 0.84252, 0);
 
 
--- StarterGui.DOMINANTZ.top.min
-G2L["8"] = Instance.new("ImageButton", G2L["2"]);
-G2L["8"]["BorderSizePixel"] = 0;
-G2L["8"]["BackgroundTransparency"] = 1;
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["ImageColor3"] = Color3.fromRGB(113, 113, 113);
-G2L["8"]["Image"] = [[rbxassetid://14953689987]];
-G2L["8"]["Size"] = UDim2.new(0, 12, 0, 12);
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Name"] = [[min]];
-G2L["8"]["Position"] = UDim2.new(0.82413, 0, 0.28365, 0);
-
-
--- StarterGui.DOMINANTZ.top.min.LocalScript
-G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+-- StarterGui.Server side executor.Frame.exe.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["7"]);
 
 
 
--- StarterGui.DOMINANTZ.top.Gui
-G2L["a"] = Instance.new("Frame", G2L["2"]);
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(246, 246, 246);
-G2L["a"]["Size"] = UDim2.new(0, 644, 0, 372);
-G2L["a"]["Position"] = UDim2.new(0, 0, 0.974, 0);
-G2L["a"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["a"]["Name"] = [[Gui]];
+-- StarterGui.Server side executor.Frame.exe.UIStroke
+G2L["9"] = Instance.new("UIStroke", G2L["7"]);
+G2L["9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag
-G2L["b"] = Instance.new("Frame", G2L["a"]);
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(246, 246, 246);
-G2L["b"]["Size"] = UDim2.new(0, 644, 0, 372);
-G2L["b"]["Position"] = UDim2.new(0, 0, -0.001, 0);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["b"]["Name"] = [[drag]];
+-- StarterGui.Server side executor.Frame.exe.fire
+G2L["a"] = Instance.new("LocalScript", G2L["7"]);
+G2L["a"]["Name"] = [[fire]];
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.clear
-G2L["c"] = Instance.new("TextButton", G2L["b"]);
-G2L["c"]["TextSize"] = 14;
-G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(217, 217, 217);
-G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c"]["Size"] = UDim2.new(0, 114, 0, 30);
-G2L["c"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["c"]["Text"] = [[Clear]];
-G2L["c"]["Name"] = [[clear]];
-G2L["c"]["Position"] = UDim2.new(0.00928, 0, 0.79666, 0);
+-- StarterGui.Server side executor.Frame.clear
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 113, 0, 33);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Clear]];
+G2L["b"]["Name"] = [[clear]];
+G2L["b"]["Position"] = UDim2.new(0.64987, 0, 0.84252, 0);
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.clear.LocalScript
-G2L["d"] = Instance.new("LocalScript", G2L["c"]);
+-- StarterGui.Server side executor.Frame.clear.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
 
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.clear.Script
-G2L["e"] = Instance.new("Script", G2L["c"]);
+-- StarterGui.Server side executor.Frame.clear.UIStroke
+G2L["d"] = Instance.new("UIStroke", G2L["b"]);
+G2L["d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
+-- StarterGui.Server side executor.Frame.SmoothDrag
+G2L["e"] = Instance.new("LocalScript", G2L["2"]);
+G2L["e"]["Name"] = [[SmoothDrag]];
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute
-G2L["f"] = Instance.new("TextButton", G2L["b"]);
+
+-- StarterGui.Server side executor.Frame.TextLabel
+G2L["f"] = Instance.new("TextLabel", G2L["2"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
 G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(217, 217, 217);
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f"]["Size"] = UDim2.new(0, 114, 0, 30);
-G2L["f"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["f"]["Text"] = [[Execute]];
-G2L["f"]["Name"] = [[execute]];
-G2L["f"]["Position"] = UDim2.new(0.00928, 0, 0.69004, 0);
+G2L["f"]["BackgroundTransparency"] = 1;
+G2L["f"]["Size"] = UDim2.new(0, 299, 0, 32);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[serverside executor of zeepkidds]];
+G2L["f"]["Position"] = UDim2.new(0.03448, 0, 0, 0);
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec
-G2L["10"] = Instance.new("LocalScript", G2L["f"]);
-G2L["10"]["Name"] = [[exec]];
+-- StarterGui.Server side executor.Frame.ExecuteEvent
+G2L["10"] = Instance.new("RemoteEvent", G2L["2"]);
+G2L["10"]["Name"] = [[ExecuteEvent]];
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec.Fire
-G2L["11"] = Instance.new("RemoteEvent", G2L["10"]);
-G2L["11"]["Name"] = [[Fire]];
+-- StarterGui.Server side executor.Frame.ExecuteEvent.Script
+G2L["11"] = Instance.new("Script", G2L["10"]);
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec.Fire.ExecuteS
-G2L["12"] = Instance.new("Script", G2L["11"]);
-G2L["12"]["Name"] = [[ExecuteS]];
+
+-- StarterGui.Server side executor.Frame.ExecuteEvent.Script.Loadstring
+G2L["12"] = Instance.new("ModuleScript", G2L["11"]);
+G2L["12"]["Name"] = [[Loadstring]];
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec.Fire.ExecuteS.Loadstring
+-- StarterGui.Server side executor.Frame.ExecuteEvent.Script.Loadstring.LuaZ
 G2L["13"] = Instance.new("ModuleScript", G2L["12"]);
-G2L["13"]["Name"] = [[Loadstring]];
+G2L["13"]["Name"] = [[LuaZ]];
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec.Fire.ExecuteS.Loadstring.LuaZ
-G2L["14"] = Instance.new("ModuleScript", G2L["13"]);
-G2L["14"]["Name"] = [[LuaZ]];
+-- StarterGui.Server side executor.Frame.ExecuteEvent.Script.Loadstring.LuaX
+G2L["14"] = Instance.new("ModuleScript", G2L["12"]);
+G2L["14"]["Name"] = [[LuaX]];
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec.Fire.ExecuteS.Loadstring.LuaX
-G2L["15"] = Instance.new("ModuleScript", G2L["13"]);
-G2L["15"]["Name"] = [[LuaX]];
+-- StarterGui.Server side executor.Frame.ExecuteEvent.Script.Loadstring.LuaY
+G2L["15"] = Instance.new("ModuleScript", G2L["12"]);
+G2L["15"]["Name"] = [[LuaY]];
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec.Fire.ExecuteS.Loadstring.LuaY
-G2L["16"] = Instance.new("ModuleScript", G2L["13"]);
-G2L["16"]["Name"] = [[LuaY]];
+-- StarterGui.Server side executor.Frame.ExecuteEvent.Script.Loadstring.LuaK
+G2L["16"] = Instance.new("ModuleScript", G2L["12"]);
+G2L["16"]["Name"] = [[LuaK]];
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec.Fire.ExecuteS.Loadstring.LuaK
-G2L["17"] = Instance.new("ModuleScript", G2L["13"]);
-G2L["17"]["Name"] = [[LuaK]];
+-- StarterGui.Server side executor.Frame.ExecuteEvent.Script.Loadstring.LuaU
+G2L["17"] = Instance.new("ModuleScript", G2L["12"]);
+G2L["17"]["Name"] = [[LuaU]];
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec.Fire.ExecuteS.Loadstring.LuaU
-G2L["18"] = Instance.new("ModuleScript", G2L["13"]);
-G2L["18"]["Name"] = [[LuaU]];
+-- StarterGui.Server side executor.Frame.ExecuteEvent.Script.Loadstring.LuaP
+G2L["18"] = Instance.new("ModuleScript", G2L["12"]);
+G2L["18"]["Name"] = [[LuaP]];
 
 
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec.Fire.ExecuteS.Loadstring.LuaP
-G2L["19"] = Instance.new("ModuleScript", G2L["13"]);
-G2L["19"]["Name"] = [[LuaP]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec.Fire.ExecuteS.Loadstring.FiOne
-G2L["1a"] = Instance.new("ModuleScript", G2L["13"]);
-G2L["1a"]["Name"] = [[FiOne]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.Script
-G2L["1b"] = Instance.new("Script", G2L["f"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.CodeInput
-G2L["1c"] = Instance.new("TextBox", G2L["b"]);
-G2L["1c"]["CursorPosition"] = -1;
-G2L["1c"]["Name"] = [[CodeInput]];
-G2L["1c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1c"]["TextWrapped"] = true;
-G2L["1c"]["TextSize"] = 14;
-G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c"]["ClearTextOnFocus"] = false;
-G2L["1c"]["Size"] = UDim2.new(0, 501, 0, 227);
-G2L["1c"]["Position"] = UDim2.new(0.008, 0, 0.059, 0);
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["1c"]["Text"] = [[print("pgn made this mod")]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.yea
-G2L["1d"] = Instance.new("TextLabel", G2L["b"]);
-G2L["1d"]["TextSize"] = 14;
-G2L["1d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1d"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d"]["Size"] = UDim2.new(0, 373, 0, 110);
-G2L["1d"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["1d"]["Text"] = [[[IDE] : this is a modded verison of dominate executor. mod made by pgn]];
-G2L["1d"]["Name"] = [[yea]];
-G2L["1d"]["Position"] = UDim2.new(0.20931, 0, 0.69031, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.yea.TextLabel
-G2L["1e"] = Instance.new("TextLabel", G2L["1d"]);
-G2L["1e"]["TextWrapped"] = true;
-G2L["1e"]["BorderSizePixel"] = 0;
-G2L["1e"]["TextSize"] = 14;
-G2L["1e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["BackgroundTransparency"] = 1;
-G2L["1e"]["Size"] = UDim2.new(0, 130, 0, 39);
-G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Text"] = [[dominate modded by pgn]];
-G2L["1e"]["Position"] = UDim2.new(-0.25469, 0, -2.63636, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame
-G2L["1f"] = Instance.new("ScrollingFrame", G2L["b"]);
-G2L["1f"]["Active"] = true;
-G2L["1f"]["CanvasPosition"] = Vector2.new(0, 274.16669);
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["Size"] = UDim2.new(0, 124, 0, 343);
-G2L["1f"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["Position"] = UDim2.new(0.80001, 0, 0.05914, 0);
-G2L["1f"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["1f"]["ScrollBarThickness"] = 0;
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.UIListLayout
-G2L["20"] = Instance.new("UIListLayout", G2L["1f"]);
-G2L["20"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.snake sniper
-G2L["21"] = Instance.new("TextButton", G2L["1f"]);
-G2L["21"]["BorderSizePixel"] = 0;
-G2L["21"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["21"]["TextSize"] = 14;
-G2L["21"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["21"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["21"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["21"]["Text"] = [[snake sniper.txt]];
-G2L["21"]["Name"] = [[snake sniper]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.snake sniper.LocalScript
-G2L["22"] = Instance.new("LocalScript", G2L["21"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.snake sniper.Script
-G2L["23"] = Instance.new("Script", G2L["21"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.obama
-G2L["24"] = Instance.new("TextButton", G2L["1f"]);
-G2L["24"]["BorderSizePixel"] = 0;
-G2L["24"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["24"]["TextSize"] = 14;
-G2L["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["24"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["24"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["24"]["Text"] = [[obama.txt]];
-G2L["24"]["Name"] = [[obama]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.obama.LocalScript
-G2L["25"] = Instance.new("LocalScript", G2L["24"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.obama.Script
-G2L["26"] = Instance.new("Script", G2L["24"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["27"] = Instance.new("TextButton", G2L["1f"]);
-G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["27"]["TextSize"] = 14;
-G2L["27"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["27"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["27"]["Text"] = [[poplira.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["28"] = Instance.new("LocalScript", G2L["27"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["29"] = Instance.new("Script", G2L["27"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["2a"] = Instance.new("TextButton", G2L["1f"]);
-G2L["2a"]["BorderSizePixel"] = 0;
-G2L["2a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2a"]["TextSize"] = 14;
-G2L["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2a"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["2a"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["2a"]["Text"] = [[Grandosla.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["2c"] = Instance.new("Script", G2L["2a"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["2d"] = Instance.new("TextButton", G2L["1f"]);
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2d"]["TextSize"] = 14;
-G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["2d"]["Text"] = [[Dababy Car.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["2f"] = Instance.new("Script", G2L["2d"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["30"] = Instance.new("TextButton", G2L["1f"]);
-G2L["30"]["TextWrapped"] = true;
-G2L["30"]["BorderSizePixel"] = 0;
-G2L["30"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["30"]["TextSize"] = 16;
-G2L["30"]["TextScaled"] = true;
-G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["30"]["Size"] = UDim2.new(0, 125, 0, 15);
-G2L["30"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["30"]["Text"] = [[Barrel Machine.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["31"] = Instance.new("LocalScript", G2L["30"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["32"] = Instance.new("Script", G2L["30"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["33"] = Instance.new("TextButton", G2L["1f"]);
-G2L["33"]["BorderSizePixel"] = 0;
-G2L["33"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["33"]["TextSize"] = 14;
-G2L["33"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["33"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["33"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["33"]["Text"] = [[nds.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["34"] = Instance.new("LocalScript", G2L["33"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["35"] = Instance.new("Script", G2L["33"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["36"] = Instance.new("TextButton", G2L["1f"]);
-G2L["36"]["BorderSizePixel"] = 0;
-G2L["36"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["36"]["TextSize"] = 14;
-G2L["36"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["36"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["36"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["36"]["Text"] = [[ro-exploit v5]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["37"] = Instance.new("LocalScript", G2L["36"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["38"] = Instance.new("Script", G2L["36"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["39"] = Instance.new("TextButton", G2L["1f"]);
-G2L["39"]["BorderSizePixel"] = 0;
-G2L["39"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["39"]["TextSize"] = 14;
-G2L["39"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["39"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["39"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["39"]["Text"] = [[KFC.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["3b"] = Instance.new("Script", G2L["39"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["3c"] = Instance.new("TextButton", G2L["1f"]);
-G2L["3c"]["BorderSizePixel"] = 0;
-G2L["3c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["3c"]["TextSize"] = 14;
-G2L["3c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3c"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["3c"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["3c"]["Text"] = [[family cafe.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["3e"] = Instance.new("Script", G2L["3c"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["3f"] = Instance.new("TextButton", G2L["1f"]);
-G2L["3f"]["BorderSizePixel"] = 0;
-G2L["3f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["3f"]["TextSize"] = 14;
-G2L["3f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3f"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["3f"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["3f"]["Text"] = [[message.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["41"] = Instance.new("Script", G2L["3f"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["42"] = Instance.new("TextButton", G2L["1f"]);
-G2L["42"]["BorderSizePixel"] = 0;
-G2L["42"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["42"]["TextSize"] = 14;
-G2L["42"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["42"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["42"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["42"]["Text"] = [[hint.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["43"] = Instance.new("LocalScript", G2L["42"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["44"] = Instance.new("Script", G2L["42"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["45"] = Instance.new("TextButton", G2L["1f"]);
-G2L["45"]["BorderSizePixel"] = 0;
-G2L["45"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["45"]["TextSize"] = 14;
-G2L["45"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["45"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["45"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["45"]["Text"] = [[Excavator.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["46"] = Instance.new("LocalScript", G2L["45"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["47"] = Instance.new("Script", G2L["45"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["48"] = Instance.new("TextButton", G2L["1f"]);
-G2L["48"]["BorderSizePixel"] = 0;
-G2L["48"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["48"]["TextSize"] = 14;
-G2L["48"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["48"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["48"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["48"]["Text"] = [[synapse x.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["49"] = Instance.new("LocalScript", G2L["48"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["4a"] = Instance.new("Script", G2L["48"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["4b"] = Instance.new("TextButton", G2L["1f"]);
-G2L["4b"]["BorderSizePixel"] = 0;
-G2L["4b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["4b"]["TextSize"] = 14;
-G2L["4b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4b"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["4b"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["4b"]["Text"] = [[primadon.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["4c"] = Instance.new("LocalScript", G2L["4b"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["4d"] = Instance.new("Script", G2L["4b"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["4e"] = Instance.new("TextButton", G2L["1f"]);
-G2L["4e"]["BorderSizePixel"] = 0;
-G2L["4e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["4e"]["TextSize"] = 14;
-G2L["4e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4e"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["4e"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["4e"]["Text"] = [[rocky2u Admin.txtx]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["4f"] = Instance.new("LocalScript", G2L["4e"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["50"] = Instance.new("Script", G2L["4e"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["51"] = Instance.new("TextButton", G2L["1f"]);
-G2L["51"]["BorderSizePixel"] = 0;
-G2L["51"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["51"]["TextSize"] = 14;
-G2L["51"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["51"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["51"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["51"]["Text"] = [[N*zi.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["52"] = Instance.new("LocalScript", G2L["51"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["53"] = Instance.new("Script", G2L["51"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["54"] = Instance.new("TextButton", G2L["1f"]);
-G2L["54"]["BorderSizePixel"] = 0;
-G2L["54"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["54"]["TextSize"] = 14;
-G2L["54"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["54"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["54"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["54"]["Text"] = [[febipazz.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["55"] = Instance.new("LocalScript", G2L["54"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["56"] = Instance.new("Script", G2L["54"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["57"] = Instance.new("TextButton", G2L["1f"]);
-G2L["57"]["BorderSizePixel"] = 0;
-G2L["57"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["57"]["TextSize"] = 14;
-G2L["57"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["57"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["57"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["57"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["57"]["Text"] = [[grab knife.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["58"] = Instance.new("LocalScript", G2L["57"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["59"] = Instance.new("Script", G2L["57"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["5a"] = Instance.new("TextButton", G2L["1f"]);
-G2L["5a"]["BorderSizePixel"] = 0;
-G2L["5a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5a"]["TextSize"] = 14;
-G2L["5a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5a"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["5a"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["5a"]["Text"] = [[Mystic.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["5b"] = Instance.new("LocalScript", G2L["5a"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["5c"] = Instance.new("Script", G2L["5a"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["5d"] = Instance.new("TextButton", G2L["1f"]);
-G2L["5d"]["BorderSizePixel"] = 0;
-G2L["5d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5d"]["TextSize"] = 14;
-G2L["5d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5d"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["5d"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["5d"]["Text"] = [[Zombie.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["5e"] = Instance.new("Script", G2L["5d"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["5f"] = Instance.new("LocalScript", G2L["5d"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["60"] = Instance.new("TextButton", G2L["1f"]);
-G2L["60"]["BorderSizePixel"] = 0;
-G2L["60"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["60"]["TextSize"] = 14;
-G2L["60"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["60"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["60"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["60"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["60"]["Text"] = [[Cart ride.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["61"] = Instance.new("LocalScript", G2L["60"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["62"] = Instance.new("Script", G2L["60"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["63"] = Instance.new("TextButton", G2L["1f"]);
-G2L["63"]["BorderSizePixel"] = 0;
-G2L["63"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["63"]["TextSize"] = 14;
-G2L["63"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["63"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["63"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["63"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["63"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["63"]["Text"] = [[bomb vest.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["64"] = Instance.new("LocalScript", G2L["63"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["65"] = Instance.new("Script", G2L["63"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["66"] = Instance.new("TextButton", G2L["1f"]);
-G2L["66"]["BorderSizePixel"] = 0;
-G2L["66"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["66"]["TextSize"] = 14;
-G2L["66"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["66"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["66"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["66"]["Text"] = [[r6.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["67"] = Instance.new("LocalScript", G2L["66"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["68"] = Instance.new("Script", G2L["66"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["69"] = Instance.new("TextButton", G2L["1f"]);
-G2L["69"]["BorderSizePixel"] = 0;
-G2L["69"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["69"]["TextSize"] = 14;
-G2L["69"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["69"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["69"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["69"]["Text"] = [[re.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["6a"] = Instance.new("LocalScript", G2L["69"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["6b"] = Instance.new("Script", G2L["69"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["6c"] = Instance.new("TextButton", G2L["1f"]);
-G2L["6c"]["BorderSizePixel"] = 0;
-G2L["6c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["6c"]["TextSize"] = 14;
-G2L["6c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6c"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["6c"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["6c"]["Text"] = [[Patrick.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["6d"] = Instance.new("LocalScript", G2L["6c"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["6e"] = Instance.new("Script", G2L["6c"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["6f"] = Instance.new("TextButton", G2L["1f"]);
-G2L["6f"]["BorderSizePixel"] = 0;
-G2L["6f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["6f"]["TextSize"] = 14;
-G2L["6f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6f"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["6f"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["6f"]["Text"] = [[Mosque.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["70"] = Instance.new("LocalScript", G2L["6f"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["71"] = Instance.new("Script", G2L["6f"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["72"] = Instance.new("TextButton", G2L["1f"]);
-G2L["72"]["BorderSizePixel"] = 0;
-G2L["72"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["72"]["TextSize"] = 14;
-G2L["72"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["72"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["72"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["72"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["72"]["Text"] = [[c0lkidd decal.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["73"] = Instance.new("LocalScript", G2L["72"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["74"] = Instance.new("Script", G2L["72"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["75"] = Instance.new("TextButton", G2L["1f"]);
-G2L["75"]["BorderSizePixel"] = 0;
-G2L["75"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["75"]["TextSize"] = 14;
-G2L["75"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["75"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["75"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["75"]["Text"] = [[coolgui.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["76"] = Instance.new("LocalScript", G2L["75"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["77"] = Instance.new("Script", G2L["75"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["78"] = Instance.new("TextButton", G2L["1f"]);
-G2L["78"]["BorderSizePixel"] = 0;
-G2L["78"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["78"]["TextSize"] = 14;
-G2L["78"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["78"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["78"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["78"]["Text"] = [[2006 map.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["79"] = Instance.new("LocalScript", G2L["78"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["7a"] = Instance.new("Script", G2L["78"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["7b"] = Instance.new("TextButton", G2L["1f"]);
-G2L["7b"]["BorderSizePixel"] = 0;
-G2L["7b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["7b"]["TextSize"] = 14;
-G2L["7b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7b"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["7b"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["7b"]["Text"] = [[china.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["7c"] = Instance.new("LocalScript", G2L["7b"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["7d"] = Instance.new("Script", G2L["7b"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["7e"] = Instance.new("TextButton", G2L["1f"]);
-G2L["7e"]["BorderSizePixel"] = 0;
-G2L["7e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["7e"]["TextSize"] = 14;
-G2L["7e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7e"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["7e"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["7e"]["Text"] = [[stummy guns.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["7f"] = Instance.new("LocalScript", G2L["7e"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["80"] = Instance.new("Script", G2L["7e"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["81"] = Instance.new("TextButton", G2L["1f"]);
-G2L["81"]["BorderSizePixel"] = 0;
-G2L["81"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["81"]["TextSize"] = 14;
-G2L["81"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["81"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["81"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["81"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["81"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["81"]["Text"] = [[topk3k v5.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["82"] = Instance.new("LocalScript", G2L["81"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["83"] = Instance.new("Script", G2L["81"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["84"] = Instance.new("TextButton", G2L["1f"]);
-G2L["84"]["BorderSizePixel"] = 0;
-G2L["84"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["84"]["TextSize"] = 14;
-G2L["84"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["84"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["84"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["84"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["84"]["Text"] = [[sillycat ss.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["85"] = Instance.new("LocalScript", G2L["84"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["86"] = Instance.new("Script", G2L["84"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["87"] = Instance.new("TextButton", G2L["1f"]);
-G2L["87"]["BorderSizePixel"] = 0;
-G2L["87"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["87"]["TextSize"] = 14;
-G2L["87"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["87"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["87"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["87"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["87"]["Text"] = [[theme.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["88"] = Instance.new("Script", G2L["87"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["89"] = Instance.new("Script", G2L["87"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["8a"] = Instance.new("TextButton", G2L["1f"]);
-G2L["8a"]["BorderSizePixel"] = 0;
-G2L["8a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["8a"]["TextSize"] = 14;
-G2L["8a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8a"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["8a"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["8a"]["Text"] = [[lua hammer.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["8b"] = Instance.new("LocalScript", G2L["8a"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["8c"] = Instance.new("Script", G2L["8a"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["8d"] = Instance.new("TextButton", G2L["1f"]);
-G2L["8d"]["BorderSizePixel"] = 0;
-G2L["8d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["8d"]["TextSize"] = 14;
-G2L["8d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8d"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["8d"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["8d"]["Text"] = [[shutdown.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["8e"] = Instance.new("LocalScript", G2L["8d"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["8f"] = Instance.new("Script", G2L["8d"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["90"] = Instance.new("TextButton", G2L["1f"]);
-G2L["90"]["BorderSizePixel"] = 0;
-G2L["90"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["90"]["TextSize"] = 14;
-G2L["90"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["90"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["90"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["90"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["90"]["Text"] = [[ANTIBAN.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["91"] = Instance.new("LocalScript", G2L["90"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["92"] = Instance.new("Script", G2L["90"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["93"] = Instance.new("TextButton", G2L["1f"]);
-G2L["93"]["BorderSizePixel"] = 0;
-G2L["93"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["93"]["TextSize"] = 14;
-G2L["93"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["93"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["93"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["93"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["93"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["93"]["Text"] = [[youngshelon.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["94"] = Instance.new("LocalScript", G2L["93"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["95"] = Instance.new("Script", G2L["93"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["96"] = Instance.new("TextButton", G2L["1f"]);
-G2L["96"]["BorderSizePixel"] = 0;
-G2L["96"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["96"]["TextSize"] = 14;
-G2L["96"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["96"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["96"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["96"]["Text"] = [[bart simpson.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["97"] = Instance.new("Script", G2L["96"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["98"] = Instance.new("LocalScript", G2L["96"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["99"] = Instance.new("TextButton", G2L["1f"]);
-G2L["99"]["BorderSizePixel"] = 0;
-G2L["99"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["99"]["TextSize"] = 14;
-G2L["99"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["99"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["99"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["99"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["99"]["Text"] = [[c4 bomb.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["9a"] = Instance.new("LocalScript", G2L["99"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["9b"] = Instance.new("Script", G2L["99"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["9c"] = Instance.new("TextButton", G2L["1f"]);
-G2L["9c"]["BorderSizePixel"] = 0;
-G2L["9c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["9c"]["TextSize"] = 14;
-G2L["9c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9c"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["9c"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["9c"]["Text"] = [[sledhammer.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["9d"] = Instance.new("LocalScript", G2L["9c"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["9e"] = Instance.new("Script", G2L["9c"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton
-G2L["9f"] = Instance.new("TextButton", G2L["1f"]);
-G2L["9f"]["BorderSizePixel"] = 0;
-G2L["9f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["9f"]["TextSize"] = 14;
-G2L["9f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9f"]["Size"] = UDim2.new(0, 131, 0, 15);
-G2L["9f"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
-G2L["9f"]["Text"] = [[plederenity.txt]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-G2L["a0"] = Instance.new("LocalScript", G2L["9f"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.Script
-G2L["a1"] = Instance.new("Script", G2L["9f"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.placeid
-G2L["a2"] = Instance.new("TextLabel", G2L["b"]);
-G2L["a2"]["TextWrapped"] = true;
-G2L["a2"]["BorderSizePixel"] = 0;
-G2L["a2"]["TextSize"] = 18;
-G2L["a2"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["a2"]["TextScaled"] = true;
-G2L["a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a2"]["TextColor3"] = Color3.fromRGB(4, 4, 4);
-G2L["a2"]["BackgroundTransparency"] = 1;
-G2L["a2"]["Size"] = UDim2.new(0, 135, 0, 29);
-G2L["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a2"]["Text"] = [[Place ID: 79708510013562 (dont ban me roblix)]];
-G2L["a2"]["Name"] = [[placeid]];
-G2L["a2"]["Position"] = UDim2.new(-0.01029, 0, 0.90061, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.drag.placeid.Script
-G2L["a3"] = Instance.new("Script", G2L["a2"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel
-G2L["a4"] = Instance.new("Frame", G2L["a"]);
-G2L["a4"]["Visible"] = false;
-G2L["a4"]["BackgroundColor3"] = Color3.fromRGB(246, 246, 246);
-G2L["a4"]["Size"] = UDim2.new(0, 644, 0, 372);
-G2L["a4"]["Position"] = UDim2.new(0, 0, 0.00088, 0);
-G2L["a4"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["a4"]["Name"] = [[panel]];
-G2L["a4"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.hintz
-G2L["a5"] = Instance.new("TextButton", G2L["a4"]);
-G2L["a5"]["BorderSizePixel"] = 0;
-G2L["a5"]["TextSize"] = 25;
-G2L["a5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(231, 231, 231);
-G2L["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a5"]["Size"] = UDim2.new(0, 131, 0, 64);
-G2L["a5"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["a5"]["Text"] = [[Hint]];
-G2L["a5"]["Name"] = [[hintz]];
-G2L["a5"]["Position"] = UDim2.new(0.00776, 0, 0.09677, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.hintz.Script
-G2L["a6"] = Instance.new("Script", G2L["a5"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.hintz.LocalScript
-G2L["a7"] = Instance.new("LocalScript", G2L["a5"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.hintz.UICorner
-G2L["a8"] = Instance.new("UICorner", G2L["a5"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.hintz.UIStroke
-G2L["a9"] = Instance.new("UIStroke", G2L["a5"]);
-G2L["a9"]["Color"] = Color3.fromRGB(214, 214, 214);
-G2L["a9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.HINTMAKE
-G2L["aa"] = Instance.new("TextBox", G2L["a4"]);
-G2L["aa"]["Name"] = [[HINTMAKE]];
-G2L["aa"]["PlaceholderColor3"] = Color3.fromRGB(217, 217, 217);
-G2L["aa"]["BorderSizePixel"] = 0;
-G2L["aa"]["TextSize"] = 25;
-G2L["aa"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["aa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["aa"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["aa"]["ClearTextOnFocus"] = false;
-G2L["aa"]["PlaceholderText"] = [[-place ur text here]];
-G2L["aa"]["Size"] = UDim2.new(0, 200, 0, 43);
-G2L["aa"]["Position"] = UDim2.new(0.23447, 0, 0.15323, 0);
-G2L["aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["aa"]["Text"] = [[]];
-G2L["aa"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.HINTMAKE.Line
-G2L["ab"] = Instance.new("ImageLabel", G2L["aa"]);
-G2L["ab"]["ZIndex"] = 3;
-G2L["ab"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
-G2L["ab"]["SliceScale"] = 0.29;
-G2L["ab"]["ScaleType"] = Enum.ScaleType.Slice;
-G2L["ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ab"]["ImageTransparency"] = 0.7;
-G2L["ab"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ab"]["Image"] = [[rbxassetid://3570695787]];
-G2L["ab"]["Size"] = UDim2.new(0.99291, 0, 0.1, 0);
-G2L["ab"]["BackgroundTransparency"] = 1;
-G2L["ab"]["Name"] = [[Line]];
-G2L["ab"]["Position"] = UDim2.new(-0.006, 0, 0.88668, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.announcezz
-G2L["ac"] = Instance.new("TextButton", G2L["a4"]);
-G2L["ac"]["BorderSizePixel"] = 0;
-G2L["ac"]["TextSize"] = 25;
-G2L["ac"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ac"]["BackgroundColor3"] = Color3.fromRGB(231, 231, 231);
-G2L["ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ac"]["Size"] = UDim2.new(0, 131, 0, 64);
-G2L["ac"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["ac"]["Text"] = [[Announce]];
-G2L["ac"]["Name"] = [[announcezz]];
-G2L["ac"]["Position"] = UDim2.new(0.00776, 0, 0.30108, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.announcezz.Script
-G2L["ad"] = Instance.new("Script", G2L["ac"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.announcezz.LocalScript
-G2L["ae"] = Instance.new("LocalScript", G2L["ac"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.announcezz.UICorner
-G2L["af"] = Instance.new("UICorner", G2L["ac"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.announcezz.UIStroke
-G2L["b0"] = Instance.new("UIStroke", G2L["ac"]);
-G2L["b0"]["Color"] = Color3.fromRGB(214, 214, 214);
-G2L["b0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.ANNOUNCE
-G2L["b1"] = Instance.new("TextBox", G2L["a4"]);
-G2L["b1"]["Name"] = [[ANNOUNCE]];
-G2L["b1"]["PlaceholderColor3"] = Color3.fromRGB(217, 217, 217);
-G2L["b1"]["BorderSizePixel"] = 0;
-G2L["b1"]["TextSize"] = 25;
-G2L["b1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b1"]["ClearTextOnFocus"] = false;
-G2L["b1"]["PlaceholderText"] = [[-place ur text here]];
-G2L["b1"]["Size"] = UDim2.new(0, 200, 0, 43);
-G2L["b1"]["Position"] = UDim2.new(0.23137, 0, 0.35753, 0);
-G2L["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b1"]["Text"] = [[]];
-G2L["b1"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.ANNOUNCE.Line
-G2L["b2"] = Instance.new("ImageLabel", G2L["b1"]);
-G2L["b2"]["ZIndex"] = 3;
-G2L["b2"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
-G2L["b2"]["SliceScale"] = 0.29;
-G2L["b2"]["ScaleType"] = Enum.ScaleType.Slice;
-G2L["b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b2"]["ImageTransparency"] = 0.7;
-G2L["b2"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b2"]["Image"] = [[rbxassetid://3570695787]];
-G2L["b2"]["Size"] = UDim2.new(0.99291, 0, 0.1, 0);
-G2L["b2"]["BackgroundTransparency"] = 1;
-G2L["b2"]["Name"] = [[Line]];
-G2L["b2"]["Position"] = UDim2.new(-0.001, 0, 0.88668, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.Decal
-G2L["b3"] = Instance.new("RemoteEvent", G2L["a4"]);
-G2L["b3"]["Name"] = [[Decal]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.Decal.Script
-G2L["b4"] = Instance.new("Script", G2L["b3"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.Sky
-G2L["b5"] = Instance.new("RemoteEvent", G2L["a4"]);
-G2L["b5"]["Name"] = [[Sky]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.Sky.Script
-G2L["b6"] = Instance.new("Script", G2L["b5"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.skybozz
-G2L["b7"] = Instance.new("TextButton", G2L["a4"]);
-G2L["b7"]["BorderSizePixel"] = 0;
-G2L["b7"]["TextSize"] = 25;
-G2L["b7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b7"]["BackgroundColor3"] = Color3.fromRGB(231, 231, 231);
-G2L["b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b7"]["Size"] = UDim2.new(0, 131, 0, 64);
-G2L["b7"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["b7"]["Text"] = [[Skybox]];
-G2L["b7"]["Name"] = [[skybozz]];
-G2L["b7"]["Position"] = UDim2.new(0.00776, 0, 0.50806, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.skybozz.LocalScript
-G2L["b8"] = Instance.new("LocalScript", G2L["b7"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.skybozz.Script
-G2L["b9"] = Instance.new("Script", G2L["b7"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.skybozz.UIStroke
-G2L["ba"] = Instance.new("UIStroke", G2L["b7"]);
-G2L["ba"]["Color"] = Color3.fromRGB(214, 214, 214);
-G2L["ba"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.skybozz.UICorner
-G2L["bb"] = Instance.new("UICorner", G2L["b7"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.SKYMAKE
-G2L["bc"] = Instance.new("TextBox", G2L["a4"]);
-G2L["bc"]["Name"] = [[SKYMAKE]];
-G2L["bc"]["PlaceholderColor3"] = Color3.fromRGB(217, 217, 217);
-G2L["bc"]["BorderSizePixel"] = 0;
-G2L["bc"]["TextSize"] = 25;
-G2L["bc"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["bc"]["ClearTextOnFocus"] = false;
-G2L["bc"]["PlaceholderText"] = [[Asset ID]];
-G2L["bc"]["Size"] = UDim2.new(0, 200, 0, 43);
-G2L["bc"]["Position"] = UDim2.new(0.22789, 0, 0.56298, 0);
-G2L["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bc"]["Text"] = [[]];
-G2L["bc"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.SKYMAKE.Line
-G2L["bd"] = Instance.new("ImageLabel", G2L["bc"]);
-G2L["bd"]["ZIndex"] = 3;
-G2L["bd"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
-G2L["bd"]["SliceScale"] = 0.29;
-G2L["bd"]["ScaleType"] = Enum.ScaleType.Slice;
-G2L["bd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bd"]["ImageTransparency"] = 0.7;
-G2L["bd"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bd"]["Image"] = [[rbxassetid://3570695787]];
-G2L["bd"]["Size"] = UDim2.new(0.99291, 0, 0.1, 0);
-G2L["bd"]["BackgroundTransparency"] = 1;
-G2L["bd"]["Name"] = [[Line]];
-G2L["bd"]["Position"] = UDim2.new(-0.001, 0, 0.90994, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.particlezz
-G2L["be"] = Instance.new("TextButton", G2L["a4"]);
-G2L["be"]["BorderSizePixel"] = 0;
-G2L["be"]["TextSize"] = 25;
-G2L["be"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["be"]["BackgroundColor3"] = Color3.fromRGB(231, 231, 231);
-G2L["be"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["be"]["Size"] = UDim2.new(0, 131, 0, 64);
-G2L["be"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["be"]["Text"] = [[Particle]];
-G2L["be"]["Name"] = [[particlezz]];
-G2L["be"]["Position"] = UDim2.new(0.00776, 0, 0.72043, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.particlezz.Script
-G2L["bf"] = Instance.new("Script", G2L["be"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.particlezz.LocalScript
-G2L["c0"] = Instance.new("LocalScript", G2L["be"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.particlezz.UIStroke
-G2L["c1"] = Instance.new("UIStroke", G2L["be"]);
-G2L["c1"]["Color"] = Color3.fromRGB(214, 214, 214);
-G2L["c1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.particlezz.UICorner
-G2L["c2"] = Instance.new("UICorner", G2L["be"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.PARTICLEMAKE
-G2L["c3"] = Instance.new("TextBox", G2L["a4"]);
-G2L["c3"]["Name"] = [[PARTICLEMAKE]];
-G2L["c3"]["PlaceholderColor3"] = Color3.fromRGB(217, 217, 217);
-G2L["c3"]["BorderSizePixel"] = 0;
-G2L["c3"]["TextSize"] = 25;
-G2L["c3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c3"]["ClearTextOnFocus"] = false;
-G2L["c3"]["PlaceholderText"] = [[Asset ID]];
-G2L["c3"]["Size"] = UDim2.new(0, 200, 0, 43);
-G2L["c3"]["Position"] = UDim2.new(0.22645, 0, 0.77642, 0);
-G2L["c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c3"]["Text"] = [[]];
-G2L["c3"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.PARTICLEMAKE.Line
-G2L["c4"] = Instance.new("ImageLabel", G2L["c3"]);
-G2L["c4"]["ZIndex"] = 3;
-G2L["c4"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
-G2L["c4"]["SliceScale"] = 0.29;
-G2L["c4"]["ScaleType"] = Enum.ScaleType.Slice;
-G2L["c4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c4"]["ImageTransparency"] = 0.7;
-G2L["c4"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c4"]["Image"] = [[rbxassetid://3570695787]];
-G2L["c4"]["Size"] = UDim2.new(0.99291, 0, 0.1, 0);
-G2L["c4"]["BackgroundTransparency"] = 1;
-G2L["c4"]["Name"] = [[Line]];
-G2L["c4"]["Position"] = UDim2.new(-0.001, 0, 0.88668, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.Particle
-G2L["c5"] = Instance.new("RemoteEvent", G2L["a4"]);
-G2L["c5"]["Name"] = [[Particle]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.Particle.Script
-G2L["c6"] = Instance.new("Script", G2L["c5"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.ImageLabel
-G2L["c7"] = Instance.new("ImageLabel", G2L["a4"]);
-G2L["c7"]["BorderSizePixel"] = 0;
-G2L["c7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c7"]["Image"] = [[rbxassetid://86102463824382]];
-G2L["c7"]["Size"] = UDim2.new(0, 99, 0, 99);
-G2L["c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c7"]["BackgroundTransparency"] = 1;
-G2L["c7"]["Position"] = UDim2.new(0.79837, 0, 0.04861, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.ImageLabel.LocalScript
-G2L["c8"] = Instance.new("LocalScript", G2L["c7"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.Hint
-G2L["c9"] = Instance.new("RemoteEvent", G2L["a4"]);
-G2L["c9"]["Name"] = [[Hint]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.Hint.Script
-G2L["ca"] = Instance.new("Script", G2L["c9"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.Message
-G2L["cb"] = Instance.new("RemoteEvent", G2L["a4"]);
-G2L["cb"]["Name"] = [[Message]];
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.Message.Script
-G2L["cc"] = Instance.new("Script", G2L["cb"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear
-G2L["cd"] = Instance.new("TextButton", G2L["a4"]);
-G2L["cd"]["BorderSizePixel"] = 0;
-G2L["cd"]["TextSize"] = 25;
-G2L["cd"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cd"]["BackgroundColor3"] = Color3.fromRGB(231, 231, 231);
-G2L["cd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["cd"]["Size"] = UDim2.new(0, 175, 0, 64);
-G2L["cd"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["cd"]["Text"] = [[Clear Announce]];
-G2L["cd"]["Name"] = [[clear]];
-G2L["cd"]["Position"] = UDim2.new(0.69911, 0, 0.35215, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.Script
-G2L["ce"] = Instance.new("Script", G2L["cd"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.Script
-G2L["cf"] = Instance.new("Script", G2L["cd"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.UICorner
-G2L["d0"] = Instance.new("UICorner", G2L["cd"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.UIStroke
-G2L["d1"] = Instance.new("UIStroke", G2L["cd"]);
-G2L["d1"]["Color"] = Color3.fromRGB(214, 214, 214);
-G2L["d1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear
-G2L["d2"] = Instance.new("TextButton", G2L["a4"]);
-G2L["d2"]["BorderSizePixel"] = 0;
-G2L["d2"]["TextSize"] = 25;
-G2L["d2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d2"]["BackgroundColor3"] = Color3.fromRGB(231, 231, 231);
-G2L["d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d2"]["Size"] = UDim2.new(0, 175, 0, 64);
-G2L["d2"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["d2"]["Text"] = [[Clear Hint]];
-G2L["d2"]["Name"] = [[clear]];
-G2L["d2"]["Position"] = UDim2.new(0.69911, 0, 0.54839, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.Script
-G2L["d3"] = Instance.new("Script", G2L["d2"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.Script
-G2L["d4"] = Instance.new("Script", G2L["d2"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.UICorner
-G2L["d5"] = Instance.new("UICorner", G2L["d2"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.UIStroke
-G2L["d6"] = Instance.new("UIStroke", G2L["d2"]);
-G2L["d6"]["Color"] = Color3.fromRGB(214, 214, 214);
-G2L["d6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear
-G2L["d7"] = Instance.new("TextButton", G2L["a4"]);
-G2L["d7"]["BorderSizePixel"] = 0;
-G2L["d7"]["TextSize"] = 25;
-G2L["d7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d7"]["BackgroundColor3"] = Color3.fromRGB(231, 231, 231);
-G2L["d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d7"]["Size"] = UDim2.new(0, 175, 0, 64);
-G2L["d7"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["d7"]["Text"] = [[Clear Particle]];
-G2L["d7"]["Name"] = [[clear]];
-G2L["d7"]["Position"] = UDim2.new(0.69911, 0, 0.74731, 0);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.Script
-G2L["d8"] = Instance.new("Script", G2L["d7"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.Script
-G2L["d9"] = Instance.new("Script", G2L["d7"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.UICorner
-G2L["da"] = Instance.new("UICorner", G2L["d7"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panel.clear.UIStroke
-G2L["db"] = Instance.new("UIStroke", G2L["d7"]);
-G2L["db"]["Color"] = Color3.fromRGB(214, 214, 214);
-G2L["db"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.DOMINANTZ.top.Gui.ex
-G2L["dc"] = Instance.new("TextButton", G2L["a"]);
-G2L["dc"]["TextSize"] = 14;
-G2L["dc"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(249, 249, 249);
-G2L["dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["dc"]["Size"] = UDim2.new(0, 63, 0, 17);
-G2L["dc"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["dc"]["Text"] = [[Executor]];
-G2L["dc"]["Name"] = [[ex]];
-G2L["dc"]["Position"] = UDim2.new(0.008, 0, 0, 2);
-
-
--- StarterGui.DOMINANTZ.top.Gui.ex.LocalScript
-G2L["dd"] = Instance.new("LocalScript", G2L["dc"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.ex.Script
-G2L["de"] = Instance.new("Script", G2L["dc"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panelz
-G2L["df"] = Instance.new("TextButton", G2L["a"]);
-G2L["df"]["TextSize"] = 14;
-G2L["df"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["df"]["BackgroundColor3"] = Color3.fromRGB(249, 249, 249);
-G2L["df"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["df"]["Size"] = UDim2.new(0, 79, 0, 17);
-G2L["df"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["df"]["Text"] = [[Admin Panel]];
-G2L["df"]["Name"] = [[panelz]];
-G2L["df"]["Position"] = UDim2.new(0.1, 7, 0, 2);
-
-
--- StarterGui.DOMINANTZ.top.Gui.panelz.LocalScript
-G2L["e0"] = Instance.new("LocalScript", G2L["df"]);
-
-
-
--- StarterGui.DOMINANTZ.top.Gui.panelz.Script
-G2L["e1"] = Instance.new("Script", G2L["df"]);
-
+-- StarterGui.Server side executor.Frame.ExecuteEvent.Script.Loadstring.Rerubi
+G2L["19"] = Instance.new("ModuleScript", G2L["12"]);
+G2L["19"]["Name"] = [[Rerubi]];
 
 
 -- Require G2L wrapper
@@ -1808,21 +200,12 @@ local function require(Module:ModuleScript)
     return G2L_REQUIRE(Module);
 end
 
-G2L_MODULES[G2L["13"]] = {
+G2L_MODULES[G2L["12"]] = {
 Closure = function()
-    local script = G2L["13"];--[[
-	Credit to einsteinK.
-	Credit to Stravant for LBI.
-	
-	Credit to the creators of all the other modules used in this.
-	
-	Sceleratis was here and decided modify some things.
-	
-	einsteinK was here again to fix a bug in LBI for if-statements
---]]
+    local script = G2L["12"];
 
 local waitDeps = {
-	'FiOne';
+	'Rerubi';
 	'LuaK';
 	'LuaP';
 	'LuaU';
@@ -1837,7 +220,7 @@ local luaX = require(script.LuaX)
 local luaY = require(script.LuaY)
 local luaZ = require(script.LuaZ)
 local luaU = require(script.LuaU)
-local fiOne = require(script.FiOne)
+local rerubi = require(script.Rerubi)
 
 luaX:init()
 local LuaState = {}
@@ -1851,10 +234,10 @@ return function(str,env)
 	local ran,error = pcall(function()
 		local zio = luaZ:init(luaZ:make_getS(str), nil)
 		if not zio then return error() end
-		local func = luaY:parser(LuaState, zio, nil, name or "::Adonis::Loadstring::")
+		local func = luaY:parser(LuaState, zio, nil, name or "nil")
 		writer, buff = luaU:make_setS()
 		luaU:dump(LuaState, func, writer, buff)
-		f = fiOne(buff.data, env)
+		f = rerubi(buff.data, env)
 	end)
 	
 	if ran then
@@ -1863,12 +246,11 @@ return function(str,env)
 		return nil,error
 	end
 end
-
 end;
 };
-G2L_MODULES[G2L["14"]] = {
+G2L_MODULES[G2L["13"]] = {
 Closure = function()
-    local script = G2L["14"];--[[--------------------------------------------------------------------
+    local script = G2L["13"];--[[--------------------------------------------------------------------
 
   lzio.lua
   Lua buffered streams in Lua
@@ -1998,9 +380,9 @@ end
 return luaZ
 end;
 };
-G2L_MODULES[G2L["15"]] = {
+G2L_MODULES[G2L["14"]] = {
 Closure = function()
-    local script = G2L["15"];--[[--------------------------------------------------------------------
+    local script = G2L["14"];--[[--------------------------------------------------------------------
 
   llex.lua
   Lua lexical analyzer in Lua
@@ -2693,9 +1075,9 @@ end
 return luaX
 end;
 };
-G2L_MODULES[G2L["16"]] = {
+G2L_MODULES[G2L["15"]] = {
 Closure = function()
-    local script = G2L["16"];--[[--------------------------------------------------------------------
+    local script = G2L["15"];--[[--------------------------------------------------------------------
 
   lparser.lua
   Lua 5 parser in Lua
@@ -4449,9 +2831,9 @@ end
 return luaY
 end;
 };
-G2L_MODULES[G2L["17"]] = {
+G2L_MODULES[G2L["16"]] = {
 Closure = function()
-    local script = G2L["17"];--[[--------------------------------------------------------------------
+    local script = G2L["16"];--[[--------------------------------------------------------------------
 
   lcode.lua
   Lua 5 code generator in Lua
@@ -5581,9 +3963,9 @@ end
 return function(a) luaY = a return luaK end
 end;
 };
-G2L_MODULES[G2L["18"]] = {
+G2L_MODULES[G2L["17"]] = {
 Closure = function()
-    local script = G2L["18"];--[[--------------------------------------------------------------------
+    local script = G2L["17"];--[[--------------------------------------------------------------------
 
   ldump.lua
   Save precompiled Lua chunks
@@ -5962,9 +4344,9 @@ end
 return luaU
 end;
 };
-G2L_MODULES[G2L["19"]] = {
+G2L_MODULES[G2L["18"]] = {
 Closure = function()
-    local script = G2L["19"];--[[--------------------------------------------------------------------
+    local script = G2L["18"];--[[--------------------------------------------------------------------
 
   lopcodes.lua
   Lua 5 virtual machine opcodes in Lua
@@ -6399,1758 +4781,813 @@ luaP.opmodes[0] =
 return luaP
 end;
 };
-G2L_MODULES[G2L["1a"]] = {
+G2L_MODULES[G2L["19"]] = {
 Closure = function()
-    local script = G2L["1a"];local bit = bit32
-local unpack = table.unpack or unpack
-
-local stm_lua_bytecode
-local wrap_lua_func
-local stm_lua_func
-
--- SETLIST config
-local FIELDS_PER_FLUSH = 50
-
--- opcode types for getting values
-local opcode_t = {
-	[0] = 'ABC',
-	'ABx',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABx',
-	'ABC',
-	'ABx',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'AsBx',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABC',
-	'AsBx',
-	'AsBx',
-	'ABC',
-	'ABC',
-	'ABC',
-	'ABx',
-	'ABC',
-}
-
-local opcode_m = {
-	[0] = {b = 'OpArgR', c = 'OpArgN'},
-	{b = 'OpArgK', c = 'OpArgN'},
-	{b = 'OpArgU', c = 'OpArgU'},
-	{b = 'OpArgR', c = 'OpArgN'},
-	{b = 'OpArgU', c = 'OpArgN'},
-	{b = 'OpArgK', c = 'OpArgN'},
-	{b = 'OpArgR', c = 'OpArgK'},
-	{b = 'OpArgK', c = 'OpArgN'},
-	{b = 'OpArgU', c = 'OpArgN'},
-	{b = 'OpArgK', c = 'OpArgK'},
-	{b = 'OpArgU', c = 'OpArgU'},
-	{b = 'OpArgR', c = 'OpArgK'},
-	{b = 'OpArgK', c = 'OpArgK'},
-	{b = 'OpArgK', c = 'OpArgK'},
-	{b = 'OpArgK', c = 'OpArgK'},
-	{b = 'OpArgK', c = 'OpArgK'},
-	{b = 'OpArgK', c = 'OpArgK'},
-	{b = 'OpArgK', c = 'OpArgK'},
-	{b = 'OpArgR', c = 'OpArgN'},
-	{b = 'OpArgR', c = 'OpArgN'},
-	{b = 'OpArgR', c = 'OpArgN'},
-	{b = 'OpArgR', c = 'OpArgR'},
-	{b = 'OpArgR', c = 'OpArgN'},
-	{b = 'OpArgK', c = 'OpArgK'},
-	{b = 'OpArgK', c = 'OpArgK'},
-	{b = 'OpArgK', c = 'OpArgK'},
-	{b = 'OpArgR', c = 'OpArgU'},
-	{b = 'OpArgR', c = 'OpArgU'},
-	{b = 'OpArgU', c = 'OpArgU'},
-	{b = 'OpArgU', c = 'OpArgU'},
-	{b = 'OpArgU', c = 'OpArgN'},
-	{b = 'OpArgR', c = 'OpArgN'},
-	{b = 'OpArgR', c = 'OpArgN'},
-	{b = 'OpArgN', c = 'OpArgU'},
-	{b = 'OpArgU', c = 'OpArgU'},
-	{b = 'OpArgN', c = 'OpArgN'},
-	{b = 'OpArgU', c = 'OpArgN'},
-	{b = 'OpArgU', c = 'OpArgN'},
-}
-
--- int rd_int_basic(string src, int s, int e, int d)
--- @src - Source binary string
--- @s - Start index of a little endian integer
--- @e - End index of the integer
--- @d - Direction of the loop
-local function rd_int_basic(src, s, e, d)
-	local num = 0
-
-	-- if bb[l] > 127 then -- signed negative
-	-- 	num = num - 256 ^ l
-	-- 	bb[l] = bb[l] - 128
-	-- end
-
-	for i = s, e, d do num = num + src:byte(i, i) * 256 ^ (i - s) end
-
-	return num
-end
-
--- float rd_flt_basic(byte f1..8)
--- @f1..4 - The 4 bytes composing a little endian float
-local function rd_flt_basic(f1, f2, f3, f4)
-	local sign = (-1) ^ bit.rshift(f4, 7)
-	local exp = bit.rshift(f3, 7) + bit.lshift(bit.band(f4, 0x7F), 1)
-	local frac = f1 + bit.lshift(f2, 8) + bit.lshift(bit.band(f3, 0x7F), 16)
-	local normal = 1
-
-	if exp == 0 then
-		if frac == 0 then
-			return sign * 0
-		else
-			normal = 0
-			exp = 1
-		end
-	elseif exp == 0x7F then
-		if frac == 0 then
-			return sign * (1 / 0)
-		else
-			return sign * (0 / 0)
-		end
-	end
-
-	return sign * 2 ^ (exp - 127) * (1 + normal / 2 ^ 23)
-end
-
--- double rd_dbl_basic(byte f1..8)
--- @f1..8 - The 8 bytes composing a little endian double
-local function rd_dbl_basic(f1, f2, f3, f4, f5, f6, f7, f8)
-	local sign = (-1) ^ bit.rshift(f8, 7)
-	local exp = bit.lshift(bit.band(f8, 0x7F), 4) + bit.rshift(f7, 4)
-	local frac = bit.band(f7, 0x0F) * 2 ^ 48
-	local normal = 1
-
-	frac = frac + (f6 * 2 ^ 40) + (f5 * 2 ^ 32) + (f4 * 2 ^ 24) + (f3 * 2 ^ 16) + (f2 * 2 ^ 8) + f1 -- help
-
-	if exp == 0 then
-		if frac == 0 then
-			return sign * 0
-		else
-			normal = 0
-			exp = 1
-		end
-	elseif exp == 0x7FF then
-		if frac == 0 then
-			return sign * (1 / 0)
-		else
-			return sign * (0 / 0)
-		end
-	end
-
-	return sign * 2 ^ (exp - 1023) * (normal + frac / 2 ^ 52)
-end
-
--- int rd_int_le(string src, int s, int e)
--- @src - Source binary string
--- @s - Start index of a little endian integer
--- @e - End index of the integer
-local function rd_int_le(src, s, e) return rd_int_basic(src, s, e - 1, 1) end
-
--- int rd_int_be(string src, int s, int e)
--- @src - Source binary string
--- @s - Start index of a big endian integer
--- @e - End index of the integer
-local function rd_int_be(src, s, e) return rd_int_basic(src, e - 1, s, -1) end
-
--- float rd_flt_le(string src, int s)
--- @src - Source binary string
--- @s - Start index of little endian float
-local function rd_flt_le(src, s) return rd_flt_basic(src:byte(s, s + 3)) end
-
--- float rd_flt_be(string src, int s)
--- @src - Source binary string
--- @s - Start index of big endian float
-local function rd_flt_be(src, s)
-	local f1, f2, f3, f4 = src:byte(s, s + 3)
-	return rd_flt_basic(f4, f3, f2, f1)
-end
-
--- double rd_dbl_le(string src, int s)
--- @src - Source binary string
--- @s - Start index of little endian double
-local function rd_dbl_le(src, s) return rd_dbl_basic(src:byte(s, s + 7)) end
-
--- double rd_dbl_be(string src, int s)
--- @src - Source binary string
--- @s - Start index of big endian double
-local function rd_dbl_be(src, s)
-	local f1, f2, f3, f4, f5, f6, f7, f8 = src:byte(s, s + 7) -- same
-	return rd_dbl_basic(f8, f7, f6, f5, f4, f3, f2, f1)
-end
-
--- to avoid nested ifs in deserializing
-local float_types = {
-	[4] = {little = rd_flt_le, big = rd_flt_be},
-	[8] = {little = rd_dbl_le, big = rd_dbl_be},
-}
-
--- byte stm_byte(Stream S)
--- @S - Stream object to read from
-local function stm_byte(S)
-	local idx = S.index
-	local bt = S.source:byte(idx, idx)
-
-	S.index = idx + 1
-	return bt
-end
-
--- string stm_string(Stream S, int len)
--- @S - Stream object to read from
--- @len - Length of string being read
-local function stm_string(S, len)
-	local pos = S.index + len
-	local str = S.source:sub(S.index, pos - 1)
-
-	S.index = pos
-	return str
-end
-
--- string stm_lstring(Stream S)
--- @S - Stream object to read from
-local function stm_lstring(S)
-	local len = S:s_szt()
-	local str
-
-	if len ~= 0 then str = stm_string(S, len):sub(1, -2) end
-
-	return str
-end
-
--- fn cst_int_rdr(string src, int len, fn func)
--- @len - Length of type for reader
--- @func - Reader callback
-local function cst_int_rdr(len, func)
-	return function(S)
-		local pos = S.index + len
-		local int = func(S.source, S.index, pos)
-		S.index = pos
-
-		return int
-	end
-end
-
--- fn cst_flt_rdr(string src, int len, fn func)
--- @len - Length of type for reader
--- @func - Reader callback
-local function cst_flt_rdr(len, func)
-	return function(S)
-		local flt = func(S.source, S.index)
-		S.index = S.index + len
-
-		return flt
-	end
-end
-
-local function stm_instructions(S)
-	local size = S:s_int()
-	local code = {}
-
-	for i = 1, size do
-		local ins = S:s_ins()
-		local op = bit.band(ins, 0x3F)
-		local args = opcode_t[op]
-		local mode = opcode_m[op]
-		local data = {value = ins, op = op, A = bit.band(bit.rshift(ins, 6), 0xFF)}
-
-		if args == 'ABC' then
-			data.B = bit.band(bit.rshift(ins, 23), 0x1FF)
-			data.C = bit.band(bit.rshift(ins, 14), 0x1FF)
-			data.is_KB = mode.b == 'OpArgK' and data.B > 0xFF -- post process optimization
-			data.is_KC = mode.c == 'OpArgK' and data.C > 0xFF
-		elseif args == 'ABx' then
-			data.Bx = bit.band(bit.rshift(ins, 14), 0x3FFFF)
-			data.is_K = mode.b == 'OpArgK'
-		elseif args == 'AsBx' then
-			data.sBx = bit.band(bit.rshift(ins, 14), 0x3FFFF) - 131071
-		end
-
-		code[i] = data
-	end
-
-	return code
-end
-
-local function stm_constants(S)
-	local size = S:s_int()
-	local consts = {}
-
-	for i = 1, size do
-		local tt = stm_byte(S)
-		local k
-
-		if tt == 1 then
-			k = stm_byte(S) ~= 0
-		elseif tt == 3 then
-			k = S:s_num()
-		elseif tt == 4 then
-			k = stm_lstring(S)
-		end
-
-		consts[i] = k -- offset +1 during instruction decode
-	end
-
-	return consts
-end
-
-local function stm_subfuncs(S, src)
-	local size = S:s_int()
-	local sub = {}
-
-	for i = 1, size do
-		sub[i] = stm_lua_func(S, src) -- offset +1 in CLOSURE
-	end
-
-	return sub
-end
-
-local function stm_lineinfo(S)
-	local size = S:s_int()
-	local lines = {}
-
-	for i = 1, size do lines[i] = S:s_int() end
-
-	return lines
-end
-
-local function stm_locvars(S)
-	local size = S:s_int()
-	local locvars = {}
-
-	for i = 1, size do locvars[i] = {varname = stm_lstring(S), startpc = S:s_int(), endpc = S:s_int()} end
-
-	return locvars
-end
-
-local function stm_upvals(S)
-	local size = S:s_int()
-	local upvals = {}
-
-	for i = 1, size do upvals[i] = stm_lstring(S) end
-
-	return upvals
-end
-
-function stm_lua_func(S, psrc)
-	local proto = {}
-	local src = stm_lstring(S) or psrc -- source is propagated
-
-	proto.source = src -- source name
-
-	S:s_int() -- line defined
-	S:s_int() -- last line defined
-
-	proto.numupvals = stm_byte(S) -- num upvalues
-	proto.numparams = stm_byte(S) -- num params
-
-	stm_byte(S) -- vararg flag
-	stm_byte(S) -- max stack size
-
-	proto.code = stm_instructions(S)
-	proto.const = stm_constants(S)
-	proto.subs = stm_subfuncs(S, src)
-	proto.lines = stm_lineinfo(S)
-
-	stm_locvars(S)
-	stm_upvals(S)
-
-	-- post process optimization
-	for _, v in ipairs(proto.code) do
-		if v.is_K then
-			v.const = proto.const[v.Bx + 1] -- offset for 1 based index
-		else
-			if v.is_KB then v.const_B = proto.const[v.B - 0xFF] end
-
-			if v.is_KC then v.const_C = proto.const[v.C - 0xFF] end
-		end
-	end
-
-	return proto
-end
-
-function stm_lua_bytecode(src)
-	-- func reader
-	local rdr_func
-
-	-- header flags
-	local little
-	local size_int
-	local size_szt
-	local size_ins
-	local size_num
-	local flag_int
-
-	-- stream object
-	local stream = {
-		-- data
-		index = 1,
-		source = src,
-	}
-
-	assert(stm_string(stream, 4) == '\27Lua', 'invalid Lua signature')
-	assert(stm_byte(stream) == 0x51, 'invalid Lua version')
-	assert(stm_byte(stream) == 0, 'invalid Lua format')
-
-	little = stm_byte(stream) ~= 0
-	size_int = stm_byte(stream)
-	size_szt = stm_byte(stream)
-	size_ins = stm_byte(stream)
-	size_num = stm_byte(stream)
-	flag_int = stm_byte(stream) ~= 0
-
-	rdr_func = little and rd_int_le or rd_int_be
-	stream.s_int = cst_int_rdr(size_int, rdr_func)
-	stream.s_szt = cst_int_rdr(size_szt, rdr_func)
-	stream.s_ins = cst_int_rdr(size_ins, rdr_func)
-
-	if flag_int then
-		stream.s_num = cst_int_rdr(size_num, rdr_func)
-	elseif float_types[size_num] then
-		stream.s_num = cst_flt_rdr(size_num, float_types[size_num][little and 'little' or 'big'])
+    local script = G2L["19"];local Select	= select;
+local Byte		= string.byte;
+local Sub		= string.sub;
+
+local Opmode = {
+	{b = 'OpArgR', c='OpArgN'}, {b = 'OpArgK', c='OpArgN'}, {b = 'OpArgU', c='OpArgU'},
+	{b = 'OpArgR', c='OpArgN'}, {b = 'OpArgU', c='OpArgN'}, {b = 'OpArgK', c='OpArgN'},
+	{b = 'OpArgR', c='OpArgK'}, {b = 'OpArgK', c='OpArgN'}, {b = 'OpArgU', c='OpArgN'},
+	{b = 'OpArgK', c='OpArgK'}, {b = 'OpArgU', c='OpArgU'}, {b = 'OpArgR', c='OpArgK'},
+	{b = 'OpArgK', c='OpArgK'}, {b = 'OpArgK', c='OpArgK'}, {b = 'OpArgK', c='OpArgK'},
+	{b = 'OpArgK', c='OpArgK'}, {b = 'OpArgK', c='OpArgK'}, {b = 'OpArgK', c='OpArgK'},
+	{b = 'OpArgR', c='OpArgN'}, {b = 'OpArgR', c='OpArgN'}, {b = 'OpArgR', c='OpArgN'},
+	{b = 'OpArgR', c='OpArgR'}, {b = 'OpArgR', c='OpArgN'}, {b = 'OpArgK', c='OpArgK'},
+	{b = 'OpArgK', c='OpArgK'}, {b = 'OpArgK', c='OpArgK'}, {b = 'OpArgR', c='OpArgU'},
+	{b = 'OpArgR', c='OpArgU'}, {b = 'OpArgU', c='OpArgU'}, {b = 'OpArgU', c='OpArgU'},
+	{b = 'OpArgU', c='OpArgN'}, {b = 'OpArgR', c='OpArgN'}, {b = 'OpArgR', c='OpArgN'},
+	{b = 'OpArgN', c='OpArgU'}, {b = 'OpArgU', c='OpArgU'}, {b = 'OpArgN', c='OpArgN'},
+	{b = 'OpArgU', c='OpArgN'}, {b = 'OpArgU', c='OpArgN'}
+};
+
+local Opcode	= { -- Opcode types.
+	'ABC',	'ABx',	'ABC',	'ABC';
+	'ABC',	'ABx',	'ABC',	'ABx';
+	'ABC',	'ABC',	'ABC',	'ABC';
+	'ABC',	'ABC',	'ABC',	'ABC';
+	'ABC',	'ABC',	'ABC',	'ABC';
+	'ABC',	'ABC',	'AsBx',	'ABC';
+	'ABC',	'ABC',	'ABC',	'ABC';
+	'ABC',	'ABC',	'ABC',	'AsBx';
+	'AsBx',	'ABC',	'ABC',	'ABC';
+	'ABx',	'ABC';
+};
+
+-- rlbi author -> Rerumu
+-- special thanks;
+--	@cntkillme for providing faster bit extraction
+--	@Eternal for being #1 bug finder and providing better float decoder
+--	@stravant for contributing to the original project this is derived from
+
+-- rerubi is an upgrade to the original Lua VM in Lua
+-- the prime goal of rerubi is to be the fastest:tm: alternative
+-- to a Lua in Lua bytecode execution
+
+local function gBit(Bit, Start, End) -- No tail-calls, yay.
+	if End then -- Thanks to cntkillme for giving input on this shorter, better approach.
+		local Res	= (Bit / 2 ^ (Start - 1)) % 2 ^ ((End - 1) - (Start - 1) + 1);
+
+		return Res - Res % 1;
 	else
-		error('unsupported float size')
-	end
+		local Plc = 2 ^ (Start - 1);
 
-	return stm_lua_func(stream, '@virtual')
-end
-
-local function close_lua_upvalues(list, index)
-	for i, uv in pairs(list) do
-		if uv.index >= index then
-			uv.value = uv.store[uv.index] -- store value
-			uv.store = uv
-			uv.index = 'value' -- self reference
-			list[i] = nil
-		end
-	end
-end
-
-local function open_lua_upvalue(list, index, stack)
-	local prev = list[index]
-
-	if not prev then
-		prev = {index = index, store = stack}
-		list[index] = prev
-	end
-
-	return prev
-end
-
-local function wrap_lua_variadic(...) return select('#', ...), {...} end
-
-local function on_lua_error(exst, err)
-	local src = exst.source
-	local line = exst.lines[exst.pc - 1]
-	local psrc, pline, pmsg = err:match('^(.-):(%d+):%s+(.+)')
-	local fmt = '%s:%i: [%s:%i] %s'
-
-	line = line or '0'
-	psrc = psrc or '?'
-	pline = pline or '0'
-	pmsg = pmsg or err
-
-	error(string.format(fmt, src, line, psrc, pline, pmsg), 0)
-end
-
-local function exec_lua_func(exst)
-	-- localize for easy lookup
-	local code = exst.code
-	local subs = exst.subs
-	local env = exst.env
-	local upvs = exst.upvals
-	local vargs = exst.varargs
-
-	-- state variables
-	local stktop = -1
-	local openupvs = {}
-	local stack = exst.stack
-	local pc = exst.pc
-
-	while true do
-		local inst = code[pc]
-		local op = inst.op
-		pc = pc + 1
-
-		if op < 19 then
-			if op < 9 then
-				if op < 4 then
-					if op < 2 then
-						if op < 1 then
-							--[[0 MOVE]]
-							stack[inst.A] = stack[inst.B]
-						else
-							--[[1 LOADK]]
-							stack[inst.A] = inst.const
-						end
-					elseif op > 2 then
-						--[[3 LOADNIL]]
-						for i = inst.A, inst.B do stack[i] = nil end
-					else
-						--[[2 LOADBOOL]]
-						stack[inst.A] = inst.B ~= 0
-
-						if inst.C ~= 0 then pc = pc + 1 end
-					end
-				elseif op > 4 then
-					if op < 7 then
-						if op < 6 then
-							--[[5 GETGLOBAL]]
-							stack[inst.A] = env[inst.const]
-						else
-							--[[6 GETTABLE]]
-							local index
-
-							if inst.is_KC then
-								index = inst.const_C
-							else
-								index = stack[inst.C]
-							end
-
-							stack[inst.A] = stack[inst.B][index]
-						end
-					elseif op > 7 then
-						--[[8 SETUPVAL]]
-						local uv = upvs[inst.B]
-
-						uv.store[uv.index] = stack[inst.A]
-					else
-						--[[7 SETGLOBAL]]
-						env[inst.const] = stack[inst.A]
-					end
-				else
-					--[[4 GETUPVAL]]
-					local uv = upvs[inst.B]
-
-					stack[inst.A] = uv.store[uv.index]
-				end
-			elseif op > 9 then
-				if op < 14 then
-					if op < 12 then
-						if op < 11 then
-							--[[10 NEWTABLE]]
-							stack[inst.A] = {}
-						else
-							--[[11 SELF]]
-							local A = inst.A
-							local B = inst.B
-							local index
-
-							if inst.is_KC then
-								index = inst.const_C
-							else
-								index = stack[inst.C]
-							end
-
-							stack[A + 1] = stack[B]
-							stack[A] = stack[B][index]
-						end
-					elseif op > 12 then
-						--[[13 SUB]]
-						local lhs, rhs
-
-						if inst.is_KB then
-							lhs = inst.const_B
-						else
-							lhs = stack[inst.B]
-						end
-
-						if inst.is_KC then
-							rhs = inst.const_C
-						else
-							rhs = stack[inst.C]
-						end
-
-						stack[inst.A] = lhs - rhs
-					else
-						--[[12 ADD]]
-						local lhs, rhs
-
-						if inst.is_KB then
-							lhs = inst.const_B
-						else
-							lhs = stack[inst.B]
-						end
-
-						if inst.is_KC then
-							rhs = inst.const_C
-						else
-							rhs = stack[inst.C]
-						end
-
-						stack[inst.A] = lhs + rhs
-					end
-				elseif op > 14 then
-					if op < 17 then
-						if op < 16 then
-							--[[15 DIV]]
-							local lhs, rhs
-
-							if inst.is_KB then
-								lhs = inst.const_B
-							else
-								lhs = stack[inst.B]
-							end
-
-							if inst.is_KC then
-								rhs = inst.const_C
-							else
-								rhs = stack[inst.C]
-							end
-
-							stack[inst.A] = lhs / rhs
-						else
-							--[[16 MOD]]
-							local lhs, rhs
-
-							if inst.is_KB then
-								lhs = inst.const_B
-							else
-								lhs = stack[inst.B]
-							end
-
-							if inst.is_KC then
-								rhs = inst.const_C
-							else
-								rhs = stack[inst.C]
-							end
-
-							stack[inst.A] = lhs % rhs
-						end
-					elseif op > 17 then
-						--[[18 UNM]]
-						stack[inst.A] = -stack[inst.B]
-					else
-						--[[17 POW]]
-						local lhs, rhs
-
-						if inst.is_KB then
-							lhs = inst.const_B
-						else
-							lhs = stack[inst.B]
-						end
-
-						if inst.is_KC then
-							rhs = inst.const_C
-						else
-							rhs = stack[inst.C]
-						end
-
-						stack[inst.A] = lhs ^ rhs
-					end
-				else
-					--[[14 MUL]]
-					local lhs, rhs
-
-					if inst.is_KB then
-						lhs = inst.const_B
-					else
-						lhs = stack[inst.B]
-					end
-
-					if inst.is_KC then
-						rhs = inst.const_C
-					else
-						rhs = stack[inst.C]
-					end
-
-					stack[inst.A] = lhs * rhs
-				end
-			else
-				--[[9 SETTABLE]]
-				local index, value
-
-				if inst.is_KB then
-					index = inst.const_B
-				else
-					index = stack[inst.B]
-				end
-
-				if inst.is_KC then
-					value = inst.const_C
-				else
-					value = stack[inst.C]
-				end
-
-				stack[inst.A][index] = value
-			end
-		elseif op > 19 then
-			if op < 29 then
-				if op < 24 then
-					if op < 22 then
-						if op < 21 then
-							--[[20 LEN]]
-							stack[inst.A] = #stack[inst.B]
-						else
-							--[[21 CONCAT]]
-							local str = stack[inst.B]
-
-							for i = inst.B + 1, inst.C do str = str .. stack[i] end
-
-							stack[inst.A] = str
-						end
-					elseif op > 22 then
-						--[[23 EQ]]
-						local lhs, rhs
-
-						if inst.is_KB then
-							lhs = inst.const_B
-						else
-							lhs = stack[inst.B]
-						end
-
-						if inst.is_KC then
-							rhs = inst.const_C
-						else
-							rhs = stack[inst.C]
-						end
-
-						if (lhs == rhs) ~= (inst.A ~= 0) then pc = pc + 1 end
-					else
-						--[[22 JMP]]
-						pc = pc + inst.sBx
-					end
-				elseif op > 24 then
-					if op < 27 then
-						if op < 26 then
-							--[[25 LE]]
-							local lhs, rhs
-
-							if inst.is_KB then
-								lhs = inst.const_B
-							else
-								lhs = stack[inst.B]
-							end
-
-							if inst.is_KC then
-								rhs = inst.const_C
-							else
-								rhs = stack[inst.C]
-							end
-
-							if (lhs <= rhs) ~= (inst.A ~= 0) then pc = pc + 1 end
-						else
-							--[[26 TEST]]
-							if (not stack[inst.A]) == (inst.C ~= 0) then pc = pc + 1 end
-						end
-					elseif op > 27 then
-						--[[28 CALL]]
-						local A = inst.A
-						local B = inst.B
-						local C = inst.C
-						local params
-						local sz_vals, l_vals
-
-						if B == 0 then
-							params = stktop - A
-						else
-							params = B - 1
-						end
-
-						sz_vals, l_vals = wrap_lua_variadic(stack[A](unpack(stack, A + 1, A + params)))
-
-						if C == 0 then
-							stktop = A + sz_vals - 1
-						else
-							sz_vals = C - 1
-						end
-
-						for i = 1, sz_vals do stack[A + i - 1] = l_vals[i] end
-					else
-						--[[27 TESTSET]]
-						local A = inst.A
-						local B = inst.B
-
-						if (not stack[B]) == (inst.C ~= 0) then
-							pc = pc + 1
-						else
-							stack[A] = stack[B]
-						end
-					end
-				else
-					--[[24 LT]]
-					local lhs, rhs
-
-					if inst.is_KB then
-						lhs = inst.const_B
-					else
-						lhs = stack[inst.B]
-					end
-
-					if inst.is_KC then
-						rhs = inst.const_C
-					else
-						rhs = stack[inst.C]
-					end
-
-					if (lhs < rhs) ~= (inst.A ~= 0) then pc = pc + 1 end
-				end
-			elseif op > 29 then
-				if op < 34 then
-					if op < 32 then
-						if op < 31 then
-							--[[30 RETURN]]
-							local A = inst.A
-							local B = inst.B
-							local vals = {}
-							local size
-
-							if B == 0 then
-								size = stktop - A + 1
-							else
-								size = B - 1
-							end
-
-							for i = 1, size do vals[i] = stack[A + i - 1] end
-
-							close_lua_upvalues(openupvs, 0)
-							return size, vals
-						else
-							--[[31 FORLOOP]]
-							local A = inst.A
-							local step = stack[A + 2]
-							local index = stack[A] + step
-							local limit = stack[A + 1]
-							local loops
-
-							if step == math.abs(step) then
-								loops = index <= limit
-							else
-								loops = index >= limit
-							end
-
-							if loops then
-								stack[inst.A] = index
-								stack[inst.A + 3] = index
-								pc = pc + inst.sBx
-							end
-						end
-					elseif op > 32 then
-						--[[33 TFORLOOP]]
-						local A = inst.A
-						local func = stack[A]
-						local state = stack[A + 1]
-						local index = stack[A + 2]
-						local base = A + 3
-						local vals
-
-						stack[base + 2] = index
-						stack[base + 1] = state
-						stack[base] = func
-
-						vals = {func(state, index)}
-
-						for i = 1, inst.C do stack[base + i - 1] = vals[i] end
-
-						if stack[base] ~= nil then
-							stack[A + 2] = stack[base]
-						else
-							pc = pc + 1
-						end
-					else
-						--[[32 FORPREP]]
-						local A = inst.A
-						local init, limit, step
-
-						init = assert(tonumber(stack[A]), '`for` initial value must be a number')
-						limit = assert(tonumber(stack[A + 1]), '`for` limit must be a number')
-						step = assert(tonumber(stack[A + 2]), '`for` step must be a number')
-
-						stack[A] = init - step
-						stack[A + 1] = limit
-						stack[A + 2] = step
-
-						pc = pc + inst.sBx
-					end
-				elseif op > 34 then
-					if op < 36 then
-						--[[35 CLOSE]]
-						close_lua_upvalues(openupvs, inst.A)
-					elseif op > 36 then
-						--[[37 VARARG]]
-						local A = inst.A
-						local size = inst.B
-
-						if size == 0 then
-							size = vargs.size
-							stktop = A + size - 1
-						end
-
-						for i = 1, size do stack[A + i - 1] = vargs.list[i] end
-					else
-						--[[36 CLOSURE]]
-						local sub = subs[inst.Bx + 1] -- offset for 1 based index
-						local nups = sub.numupvals
-						local uvlist
-
-						if nups ~= 0 then
-							uvlist = {}
-
-							for i = 1, nups do
-								local pseudo = code[pc + i - 1]
-
-								if pseudo.op == 0 then -- @MOVE
-									uvlist[i - 1] = open_lua_upvalue(openupvs, pseudo.B, stack)
-								elseif pseudo.op == 4 then -- @GETUPVAL
-									uvlist[i - 1] = upvs[pseudo.B]
-								end
-							end
-
-							pc = pc + nups
-						end
-
-						stack[inst.A] = wrap_lua_func(sub, env, uvlist)
-					end
-				else
-					--[[34 SETLIST]]
-					local A = inst.A
-					local C = inst.C
-					local size = inst.B
-					local tab = stack[A]
-					local offset
-
-					if size == 0 then size = stktop - A end
-
-					if C == 0 then
-						C = inst[pc].value
-						pc = pc + 1
-					end
-
-					offset = (C - 1) * FIELDS_PER_FLUSH
-
-					for i = 1, size do tab[i + offset] = stack[A + i] end
-				end
-			else
-				--[[29 TAILCALL]]
-				local A = inst.A
-				local B = inst.B
-				local params
-
-				if B == 0 then
-					params = stktop - A
-				else
-					params = B - 1
-				end
-
-				close_lua_upvalues(openupvs, 0)
-				return wrap_lua_variadic(stack[A](unpack(stack, A + 1, A + params)))
-			end
+		if (Bit % (Plc + Plc) >= Plc) then
+			return 1;
 		else
-			--[[19 NOT]]
-			stack[inst.A] = not stack[inst.B]
+			return 0;
+		end;
+	end;
+end;
+
+local function GetMeaning(ByteString)
+	local Pos	= 1;
+	local gSizet;
+	local gInt;
+
+	local function gBits8() -- Get the next byte in the stream.
+		local F	= Byte(ByteString, Pos, Pos);
+
+		Pos	= Pos + 1;
+
+		return F;
+	end;
+
+	local function gBits32()
+		local W, X, Y, Z	= Byte(ByteString, Pos, Pos + 3);
+
+		Pos	= Pos + 4;
+
+		return (Z * 16777216) + (Y * 65536) + (X * 256) + W;
+	end;
+
+	local function gBits64()
+		return gBits32() * 4294967296 + gBits32();
+	end;
+
+	local function gFloat()
+		-- thanks @Eternal for giving me this so I could mangle it in here and have it work
+		local Left = gBits32();
+		local Right = gBits32();
+		local IsNormal = 1
+		local Mantissa = (gBit(Right, 1, 20) * (2 ^ 32))
+						+ Left;
+
+		local Exponent = gBit(Right, 21, 31);
+		local Sign = ((-1) ^ gBit(Right, 32));
+
+		if (Exponent == 0) then
+			if (Mantissa == 0) then
+				return Sign * 0 -- +-0
+			else
+				Exponent = 1
+				IsNormal = 0
+			end
+		elseif (Exponent == 2047) then
+			if (Mantissa == 0) then
+				return Sign * (1 / 0) -- +-Inf
+			else
+				return Sign * (0 / 0) -- +-Q/Nan
+			end
 		end
 
-		exst.pc = pc
-	end
-end
+		-- sign * 2**e-1023 * isNormal.mantissa
+		return math.ldexp(Sign, Exponent - 1023) * (IsNormal + (Mantissa / (2 ^ 52)))
+	end;
 
-function wrap_lua_func(state, env, upvals)
-	local st_code = state.code
-	local st_subs = state.subs
-	local st_lines = state.lines
-	local st_source = state.source
-	local st_numparams = state.numparams
+	local function gString(Len)
+		local Str;
 
-	local function exec_wrap(...)
-		local stack = {}
-		local varargs = {}
-		local sizevarg = 0
-		local sz_args, l_args = wrap_lua_variadic(...)
+		if Len then
+			Str	= Sub(ByteString, Pos, Pos + Len - 1);
 
-		local exst
-		local ok, err, vals
-
-		for i = 1, st_numparams do stack[i - 1] = l_args[i] end
-
-		if st_numparams < sz_args then
-			sizevarg = sz_args - st_numparams
-			for i = 1, sizevarg do varargs[i] = l_args[st_numparams + i] end
-		end
-
-		exst = {
-			varargs = {list = varargs, size = sizevarg},
-			code = st_code,
-			subs = st_subs,
-			lines = st_lines,
-			source = st_source,
-			env = env,
-			upvals = upvals,
-			stack = stack,
-			pc = 1,
-		}
-
-		ok, err, vals = pcall(exec_lua_func, exst, ...)
-
-		if ok then
-			return unpack(vals, 1, err)
+			Pos = Pos + Len;
 		else
-			on_lua_error(exst, err)
-		end
+			Len = gSizet();
 
-		return -- explicit "return nothing"
-	end
+			if (Len == 0) then return; end;
 
-	return exec_wrap
-end
+			Str	= Sub(ByteString, Pos, Pos + Len - 1);
 
-return function(BCode, Env)
-	return wrap_lua_func(stm_lua_bytecode(BCode), Env or getfenv(0))
-end
+			Pos = Pos + Len;
+		end;
+
+		return Str;
+	end;
+
+	local function ChunkDecode()
+		local Instr	= {};
+		local Const	= {};
+		local Proto	= {};
+		local Chunk	= {
+			Instr	= Instr; -- Instructions
+			Const	= Const; -- Constants
+			Proto	= Proto; -- Prototypes
+			Lines	= {}; -- Lines
+			Name	= gString(); -- Grab name string.
+			FirstL	= gInt(); -- First line.
+			LastL	= gInt(); -- Last line.
+			Upvals	= gBits8(); -- Upvalue count.
+			Args	= gBits8(); -- Arg count.
+			Vargs	= gBits8(); -- Vararg type.
+			Stack	= gBits8(); -- Stack.
+		};
+		local ConstantReferences = {}; -- for an optimization
+
+		if Chunk.Name then
+			Chunk.Name	= Sub(Chunk.Name, 1, -2);
+		end;
+		
+
+		for Idx = 1, gInt() do -- Loading instructions to the chunk.
+			local Data	= gBits32();
+			local Opco	= gBit(Data, 1, 6);
+			local Type	= Opcode[Opco + 1];
+			local Mode  = Opmode[Opco + 1];
+
+			local Inst	= {
+				Enum	= Opco;
+				Value	= Data;
+				gBit(Data, 7, 14); -- Register A.
+			};
+
+			if (Type == 'ABC') then -- Most common, basic instruction type.
+				Inst[2]	= gBit(Data, 24, 32);
+				Inst[3]	= gBit(Data, 15, 23);
+			elseif (Type == 'ABx') then
+				Inst[2]	= gBit(Data, 15, 32);
+			elseif (Type == 'AsBx') then
+				Inst[2]	= gBit(Data, 15, 32) - 131071;
+			end;
+
+			-- Precompute data for some instructions
+			do 
+				-- TEST and TESTSET 
+				if Opco == 26 or Opco == 27 then 
+					Inst[3] = Inst[3] == 0;
+				end
+
+				-- EQ, LT, LE
+				if Opco >= 23 and Opco <= 25 then 
+					Inst[1] = Inst[1] ~= 0;
+				end 
+
+				-- Anything that looks at a constant using B
+				if Mode.b == 'OpArgK' then
+					Inst[3] = Inst[3] or false; -- Simply to guarantee that Inst[4] is inserted in the array part
+					if Inst[2] >= 256 then 
+						local Cons = Inst[2] - 256;
+						Inst[4] = Cons;
+
+						local ReferenceData = ConstantReferences[Cons];
+						if not ReferenceData then 
+							ReferenceData = {};
+							ConstantReferences[Cons] = ReferenceData;
+						end
+
+						ReferenceData[#ReferenceData + 1] = {Inst = Inst, Register = 4}
+					end
+				end 
+
+				-- Anything that looks at a constant using C
+				if Mode.c == 'OpArgK' then
+					Inst[4] = Inst[4] or false -- Simply to guarantee that Inst[5] is inserted in the array part
+					if Inst[3] >= 256 then 
+						local Cons = Inst[3] - 256;
+						Inst[5] = Cons;
+
+						local ReferenceData = ConstantReferences[Cons];
+						if not ReferenceData then 
+							ReferenceData = {};
+							ConstantReferences[Cons] = ReferenceData;
+						end
+
+						ReferenceData[#ReferenceData + 1] = {Inst = Inst, Register = 5}
+					end
+				end 
+			end
+
+			Instr[Idx]	= Inst;
+		end;
+
+		for Idx = 1, gInt() do -- Load constants.
+			local Type	= gBits8();
+			local Cons;
+
+			if (Type == 1) then -- Boolean
+				Cons	= (gBits8() ~= 0);
+			elseif (Type == 3) then -- Float/Double
+				Cons	= gFloat();
+			elseif (Type == 4) then
+				Cons	= Sub(gString(), 1, -2);
+			end;
+
+			-- Finish precomputing constants
+			local Refs = ConstantReferences[Idx - 1];
+			if Refs then 
+				for i = 1, #Refs do
+					Refs[i].Inst[Refs[i].Register] = Cons
+				end 
+			end
+
+			-- Write Constant to pool
+			Const[Idx - 1]	= Cons;
+		end;
+
+		for Idx = 1, gInt() do -- Nested function prototypes.
+			Proto[Idx - 1]	= ChunkDecode();
+		end;
+
+		do -- Debugging
+			local Lines	= Chunk.Lines;
+
+			for Idx = 1, gInt() do
+				Lines[Idx]	= gBits32();
+			end;
+
+			for _ = 1, gInt() do -- Locals in stack.
+				gString(); -- Name of local.
+				gBits32(); -- Starting point.
+				gBits32(); -- End point.
+			end;
+
+			for _ = 1, gInt() do -- Upvalues.
+				gString(); -- Name of upvalue.
+			end;
+		end;
+
+		return Chunk; -- Finished chunk.
+	end;
+
+	do -- Most of this chunk I was too lazy to reformat or change
+		assert(gString(4) == "\27Lua", "Lua bytecode expected.");
+		assert(gBits8() == 0x51, "Only Lua 5.1 is supported.");
+
+		gBits8(); -- Probably version control.
+		gBits8(); -- Is small endians.
+
+		local IntSize	= gBits8(); -- Int size
+		local Sizet		= gBits8(); -- size_t
+
+		if (IntSize == 4) then
+			gInt	= gBits32;
+		elseif (IntSize == 8) then
+			gInt	= gBits64;
+		else
+			error('Integer size not supported', 2);
+		end;
+
+		if (Sizet == 4) then
+			gSizet	= gBits32;
+		elseif (Sizet == 8) then
+			gSizet	= gBits64;
+		else
+			error('Sizet size not supported', 2);
+		end;
+
+		assert(gString(3) == "\4\8\0", "Unsupported bytecode target platform");
+	end;
+
+	return ChunkDecode();
+end;
+
+local function _Returns(...)
+	return Select('#', ...), {...};
+end;
+
+local function Wrap(Chunk, Env, Upvalues)
+	local Instr	= Chunk.Instr;
+	local Const	= Chunk.Const;
+	local Proto	= Chunk.Proto;
+
+	local function OnError(Err, Position) -- Handle your errors in whatever way.
+		local Name	= Chunk.Name or 'Code';
+		local Line	= Chunk.Lines[Position] or '?';
+
+		error(string.format('%s:%s: %s', Name, Line, tostring(Err)), 0);
+	end;
+
+	return function(...)
+		-- Returned function to run bytecode chunk (Don't be stupid, you can't setfenv this to work your way).
+		local InstrPoint, Top	= 1, -1;
+		local Vararg, Varargsz	= {}, Select('#', ...) - 1;
+
+		local GStack	= {};
+		local Lupvals	= {};
+		local Stack		= setmetatable({}, {
+			__index		= GStack;
+			__newindex	= function(_, Key, Value)
+				if (Key > Top) then
+					Top	= Key;
+				end;
+
+				GStack[Key]	= Value;
+			end;
+		});
+
+		local function Loop()
+			local Inst, Enum;
+
+			while true do
+				Inst		= Instr[InstrPoint];
+				Enum		= Inst.Enum;
+				InstrPoint	= InstrPoint + 1;
+				
+				if (Enum == 0) then -- MOVE
+					Stack[Inst[1]]	= Stack[Inst[2]];
+				elseif (Enum == 1) then -- LOADK
+					Stack[Inst[1]]	= Const[Inst[2]];
+				elseif (Enum == 2) then -- LOADBOOL
+					Stack[Inst[1]]	= (Inst[2] ~= 0);
+
+					if (Inst[3] ~= 0) then
+						InstrPoint	= InstrPoint + 1;
+					end;
+				elseif (Enum == 3) then -- LOADNIL
+					local Stk	= Stack;
+
+					for Idx = Inst[1], Inst[2] do
+						Stk[Idx]	= nil;
+					end;
+				elseif (Enum == 4) then -- GETUPVAL
+					Stack[Inst[1]]	= Upvalues[Inst[2]];
+				elseif (Enum == 5) then -- GETGLOBAL
+					Stack[Inst[1]]	= Env[Const[Inst[2]]];
+				elseif (Enum == 6) then -- GETTABLE
+					local Stk	= Stack;
+					Stk[Inst[1]]	= Stk[Inst[2]][Inst[5] or Stk[Inst[3]]];
+				elseif (Enum == 7) then -- SETGLOBAL
+					Env[Const[Inst[2]]]	= Stack[Inst[1]];
+				elseif (Enum == 8) then -- SETUPVAL
+					Upvalues[Inst[2]]	= Stack[Inst[1]];
+				elseif (Enum == 9) then -- SETTABLE
+					local Stk = Stack
+					Stk[Inst[1]][Inst[4] or Stk[Inst[2]]] = Inst[5] or Stk[Inst[3]]
+				elseif (Enum == 10) then -- NEWTABLE
+					Stack[Inst[1]]	= {};
+				elseif (Enum == 11) then -- SELF
+					local Stk	= Stack;
+					local A		= Inst[1];
+					local B		= Stk[Inst[2]];
+					local C		= Inst[5] or Stk[Inst[3]];
+					Stk[A + 1]	= B;
+					Stk[A]		= B[C];
+				elseif (Enum == 12) then -- ADD
+					local Stk = Stack;
+					Stk[Inst[1]]	= (Inst[4] or Stk[Inst[2]]) + (Inst[5] or Stk[Inst[3]]);
+				elseif (Enum == 13) then -- SUB
+					local Stk = Stack;
+					Stk[Inst[1]]	= (Inst[4] or Stk[Inst[2]]) - (Inst[5] or Stk[Inst[3]]);
+				elseif (Enum == 14) then -- MUL
+					local Stk = Stack;
+					Stk[Inst[1]]	= (Inst[4] or Stk[Inst[2]]) * (Inst[5] or Stk[Inst[3]]);
+				elseif (Enum == 15) then -- DIV
+					local Stk = Stack;
+					Stk[Inst[1]]	= (Inst[4] or Stk[Inst[2]]) / (Inst[5] or Stk[Inst[3]]);
+				elseif (Enum == 16) then -- MOD
+					local Stk = Stack;
+					Stk[Inst[1]]	= (Inst[4] or Stk[Inst[2]]) % (Inst[5] or Stk[Inst[3]]);
+				elseif (Enum == 17) then -- POW
+					local Stk = Stack;
+					Stk[Inst[1]]	= (Inst[4] or Stk[Inst[2]]) ^ (Inst[5] or Stk[Inst[3]]);
+				elseif (Enum == 18) then -- UNM
+					Stack[Inst[1]]	= -Stack[Inst[2]];
+				elseif (Enum == 19) then -- NOT
+					Stack[Inst[1]]	= (not Stack[Inst[2]]);
+				elseif (Enum == 20) then -- LEN
+					Stack[Inst[1]]	= #Stack[Inst[2]];
+				elseif (Enum == 21) then -- CONCAT
+					local Stk	= Stack;
+					local B		= Inst[2];
+					local K 	= Stk[B];
+
+					for Idx = B + 1, Inst[3] do
+						K = K .. Stk[Idx];
+					end;
+
+					Stack[Inst[1]]	= K;
+				elseif (Enum == 22) then -- JMP
+					InstrPoint	= InstrPoint + Inst[2];
+				elseif (Enum == 23) then -- EQ
+					local Stk = Stack;
+					local B = Inst[4] or Stk[Inst[2]];
+					local C = Inst[5] or Stk[Inst[3]];
+					
+					if (B == C) ~= Inst[1] then
+						InstrPoint	= InstrPoint + 1;
+					end;
+				elseif (Enum == 24) then -- LT
+					local Stk = Stack;
+					local B = Inst[4] or Stk[Inst[2]];
+					local C = Inst[5] or Stk[Inst[3]];
+					
+					if (B < C) ~= Inst[1] then
+						InstrPoint	= InstrPoint + 1;
+					end;
+				elseif (Enum == 25) then -- LE
+					local Stk = Stack;
+					local B = Inst[4] or Stk[Inst[2]];
+					local C = Inst[5] or Stk[Inst[3]];
+
+					if (B <= C) ~= Inst[1] then
+						InstrPoint	= InstrPoint + 1;
+					end;
+				elseif (Enum == 26) then -- TEST
+				    if Inst[3] then 
+				      if Stack[Inst[1]] then
+				        InstrPoint = InstrPoint + 1;
+				      end
+				    elseif Stack[Inst[1]] then
+				    else 
+				      InstrPoint = InstrPoint + 1;
+				    end
+				elseif (Enum == 27) then -- TESTSET
+					local B = Stack[Inst[2]];
+
+				    if Inst[3] then 
+						if B then
+					    	InstrPoint = InstrPoint + 1;
+						else 
+					    	Stack[Inst[1]] = B
+						end
+				    elseif B then
+				    	Stack[Inst[1]] = B
+				    else 
+				    	InstrPoint = InstrPoint + 1;
+				    end
+				elseif (Enum == 28) then -- CALL
+					local A	= Inst[1];
+					local B	= Inst[2];
+					local C	= Inst[3];
+					local Stk	= Stack;
+					local Args, Results;
+					local Limit, Edx;
+
+					Args	= {};
+
+					if (B ~= 1) then
+						if (B ~= 0) then
+							Limit = A + B - 1;
+						else
+							Limit = Top;
+						end;
+
+						Edx	= 0;
+
+						for Idx = A + 1, Limit do
+							Edx = Edx + 1;
+
+							Args[Edx] = Stk[Idx];
+						end;
+
+						Limit, Results = _Returns(Stk[A](unpack(Args, 1, Limit - A)));
+					else
+						Limit, Results = _Returns(Stk[A]());
+					end;
+
+					Top = A - 1;
+
+					if (C ~= 1) then
+						if (C ~= 0) then
+							Limit = A + C - 2;
+						else
+							Limit = Limit + A - 1;
+						end;
+
+						Edx	= 0;
+
+						for Idx = A, Limit do
+							Edx = Edx + 1;
+
+							Stk[Idx] = Results[Edx];
+						end;
+					end;
+				elseif (Enum == 29) then -- TAILCALL
+					local A	= Inst[1];
+					local B	= Inst[2];
+					local Stk	= Stack;
+					local Args, Results;
+					local Limit;
+					local Rets = 0;
+
+					Args = {};
+
+					if (B ~= 1) then
+						if (B ~= 0) then
+							Limit = A + B - 1;
+						else
+							Limit = Top;
+						end
+
+						for Idx = A + 1, Limit do
+							Args[#Args + 1] = Stk[Idx];
+						end
+
+						Results = {Stk[A](unpack(Args, 1, Limit - A))};
+					else
+						Results = {Stk[A]()};
+					end;
+
+					for Index in pairs(Results) do -- get return count
+						if (Index > Rets) then
+							Rets = Index;
+						end;
+					end;
+
+					return Results, Rets;
+				elseif (Enum == 30) then -- RETURN
+					local A	= Inst[1];
+					local B	= Inst[2];
+					local Stk	= Stack;
+					local Edx, Output;
+					local Limit;
+
+					if (B == 1) then
+						return;
+					elseif (B == 0) then
+						Limit	= Top;
+					else
+						Limit	= A + B - 2;
+					end;
+
+					Output = {};
+					Edx = 0;
+
+					for Idx = A, Limit do
+						Edx	= Edx + 1;
+
+						Output[Edx] = Stk[Idx];
+					end;
+
+					return Output, Edx;
+				elseif (Enum == 31) then -- FORLOOP
+					local A		= Inst[1];
+					local Stk	= Stack;
+
+					local Step	= Stk[A + 2];
+					local Index	= Stk[A] + Step;
+
+					Stk[A]	= Index;
+
+					if (Step > 0) then
+						if Index <= Stk[A + 1] then
+							InstrPoint	= InstrPoint + Inst[2];
+
+							Stk[A + 3] = Index;
+						end;
+					else
+						if Index >= Stk[A + 1] then
+							InstrPoint	= InstrPoint + Inst[2];
+
+							Stk[A + 3] = Index;
+						end
+					end
+				elseif (Enum == 32) then -- FORPREP
+					local A		= Inst[1];
+					local Stk	= Stack;
+
+					-- As per mirroring the real vm
+					Stk[A] = assert(tonumber(Stk[A]), '`for` initial value must be a number');
+					Stk[A + 1] = assert(tonumber(Stk[A + 1]), '`for` limit must be a number');
+					Stk[A + 2] = assert(tonumber(Stk[A + 2]), '`for` step must be a number');
+
+					Stk[A]	= Stk[A] - Stk[A + 2];
+
+					InstrPoint	= InstrPoint + Inst[2];
+				elseif (Enum == 33) then -- TFORLOOP
+					local A		= Inst[1];
+					local C		= Inst[3];
+					local Stk	= Stack;
+
+					local Offset	= A + 2;
+					local Result	= {Stk[A](Stk[A + 1], Stk[A + 2])};
+
+					for Idx = 1, C do
+						Stack[Offset + Idx] = Result[Idx];
+					end;
+
+					if (Stk[A + 3] ~= nil) then
+						Stk[A + 2]	= Stk[A + 3];
+					else
+						InstrPoint	= InstrPoint + 1;
+					end;
+				elseif (Enum == 34) then -- SETLIST
+					local A		= Inst[1];
+					local B		= Inst[2];
+					local C		= Inst[3];
+					local Stk	= Stack;
+
+					if (C == 0) then
+						InstrPoint	= InstrPoint + 1;
+						C			= Instr[InstrPoint].Value;
+					end;
+
+					local Offset	= (C - 1) * 50;
+					local T			= Stk[A]; -- Assuming T is the newly created table.
+
+					if (B == 0) then
+						B	= Top - A;
+					end;
+
+					for Idx = 1, B do
+						T[Offset + Idx] = Stk[A + Idx];
+					end;
+				elseif (Enum == 35) then -- CLOSE
+					local A		= Inst[1];
+					local Cls	= {}; -- Slight doubts on any issues this may cause
+
+					for Idx = 1, #Lupvals do
+						local List = Lupvals[Idx];
+
+						for Idz = 0, #List do
+							local Upv	= List[Idz];
+							local Stk	= Upv[1];
+							local Pos	= Upv[2];
+
+							if (Stk == Stack) and (Pos >= A) then
+								Cls[Pos]	= Stk[Pos];
+								Upv[1]		= Cls; -- @memcorrupt credit me for the spoonfeed
+							end;
+						end;
+					end;
+				elseif (Enum == 36) then -- CLOSURE
+					local NewProto	= Proto[Inst[2]];
+					local Stk	= Stack;
+
+					local Indexes;
+					local NewUvals;
+
+					if (NewProto.Upvals ~= 0) then
+						Indexes		= {};
+						NewUvals	= setmetatable({}, {
+								__index = function(_, Key)
+									local Val	= Indexes[Key];
+
+									return Val[1][Val[2]];
+								end,
+								__newindex = function(_, Key, Value)
+									local Val	= Indexes[Key];
+
+									Val[1][Val[2]]	= Value;
+								end;
+							}
+						);
+
+						for Idx = 1, NewProto.Upvals do
+							local Mvm	= Instr[InstrPoint];
+
+							if (Mvm.Enum == 0) then -- MOVE
+								Indexes[Idx - 1] = {Stk, Mvm[2]};
+							elseif (Mvm.Enum == 4) then -- GETUPVAL
+								Indexes[Idx - 1] = {Upvalues, Mvm[2]};
+							end;
+
+							InstrPoint	= InstrPoint + 1;
+						end;
+
+						Lupvals[#Lupvals + 1]	= Indexes;
+					end;
+
+					Stk[Inst[1]]			= Wrap(NewProto, Env, NewUvals);
+				elseif (Enum == 37) then -- VARARG
+					local A	= Inst[1];
+					local B	= Inst[2];
+					local Stk, Vars	= Stack, Vararg;
+
+					Top = A - 1;
+
+					for Idx = A, A + (B > 0 and B - 1 or Varargsz) do
+						Stk[Idx]	= Vars[Idx - A];
+					end;
+				end;
+			end;
+		end;
+
+		local Args	= {...};
+
+		for Idx = 0, Varargsz do
+			if (Idx >= Chunk.Args) then
+				Vararg[Idx - Chunk.Args] = Args[Idx + 1];
+			else
+				Stack[Idx] = Args[Idx + 1];
+			end;
+		end;
+
+		local A, B, C	= pcall(Loop); -- Pcalling to allow yielding
+
+		if A then -- We're always expecting this to come out true (because errorless code)
+			if B and (C > 0) then -- So I flipped the conditions.
+				return unpack(B, 1, C);
+			end;
+
+			return;
+		else
+			OnError(B, InstrPoint - 1); -- Didn't get time to test the `-1` honestly, but I assume it works properly
+		end;
+	end;
+end;
+
+return function(BCode, Env) -- lua_function LoadBytecode (string BCode, table Env)
+	local Buffer	= GetMeaning(BCode);
+
+	return Wrap(Buffer, Env or getfenv(0)), Buffer;
+end;
 
 end;
 };
--- StarterGui.DOMINANTZ.top.Drag
-local function C_3()
-local script = G2L["3"];
+-- StarterGui.Server side executor.Frame.exe.fire
+local function C_a()
+local script = G2L["a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ExecuteEvent:FireServer(script.Parent.Parent.TextBox.Text)
+		end)
+end;
+task.spawn(C_a);
+-- StarterGui.Server side executor.Frame.SmoothDrag
+local function C_e()
+local script = G2L["e"];
+	local Drag = script.Parent
+	gsCoreGui = game:GetService("CoreGui")
+	gsTween = game:GetService("TweenService")
 	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-			
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+		local function update(input)
+			local delta = input.Position - dragStart
+			local dragTime = 0.04
+			local SmoothDrag = {}
+			SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+			dragSmoothFunction:Play()
 		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end;
-task.spawn(C_3);
--- StarterGui.DOMINANTZ.top.close.LocalScript
-local function C_6()
-local script = G2L["6"];
-	local top = script.Parent.Parent.top
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		top.Visible = false
-	end)
-end;
-task.spawn(C_6);
--- StarterGui.DOMINANTZ.top.min.LocalScript
-local function C_9()
-local script = G2L["9"];
-	local gui = script.Parent.Parent.Gui
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		gui.Visible = not gui.Visible
-	end)
-end;
-task.spawn(C_9);
--- StarterGui.DOMINANTZ.top.Gui.drag.clear.LocalScript
-local function C_d()
-local script = G2L["d"];
-	local hexagon = script.Parent.Parent.CodeInput
-	script.Parent.MouseButton1Click:Connect(function()
-		hexagon.Text = ""
-	end)
-end;
-task.spawn(C_d);
--- StarterGui.DOMINANTZ.top.Gui.drag.execute.exec
-local function C_10()
-local script = G2L["10"];
-	local val = 0
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if val >= 5 then
-			game.StarterGui:SetCore("SendNotification", {
-				Title = "Cooldown!";
-				Text = "Cooling down your spam.";
-			})
-			wait(3)
-			val = 0
-		else
-			script.Fire:FireServer("data1", "data2", script.Parent.Parent.CodeInput.Text, "data4", "data5")
-			script.Fire2:FireServer(script.Parent.Parent.CodeInput.Text)
-			val = val + 1
-		end
-	end)
-	
+		Drag.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = Drag.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+		Drag.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging and Drag.Size then
+				update(input)
+			end
+		end)
 	
 end;
-task.spawn(C_10);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.snake sniper.LocalScript
-local function C_22()
-local script = G2L["22"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(81450151375713)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_22);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.obama.LocalScript
-local function C_25()
-local script = G2L["25"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(119380379723999):obungaishere()'
-	end)
-end;
-task.spawn(C_25);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_28()
-local script = G2L["28"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(74264471859345):Pload("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_28);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_2b()
-local script = G2L["2b"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(10550585538)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_2b);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_2e()
-local script = G2L["2e"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(6902745120).load("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_2e);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_31()
-local script = G2L["31"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(95235428232107).barrel("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_31);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_34()
-local script = G2L["34"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(14704225060).nds("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_34);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_37()
-local script = G2L["37"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(13895319375)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_37);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_3a()
-local script = G2L["3a"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(3615713971).load("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_3a);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_3d()
-local script = G2L["3d"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(108520326907147).lol("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_3d);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_40()
-local script = G2L["40"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = [[
-	local a = Instance.new('Message')
-	a.Text = 'DOMINANT ON TOP'
-	a.Parent = workspace
-	wait(3)
-	a:Destroy()
-	
-	]]
-	end)
-	
-end;
-task.spawn(C_40);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_43()
-local script = G2L["43"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = [[
-	local a = Instance.new('Hint')
-	a.Text = 'DOMINANT ON TOP'
-	a.Parent = workspace
-	wait(3)
-	a:Destroy()
-	
-	]]
-	end)
-	
-end;
-task.spawn(C_43);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_46()
-local script = G2L["46"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(16857604287)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_46);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_49()
-local script = G2L["49"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(5013851171)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_49);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_4c()
-local script = G2L["4c"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(94673163261524)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_4c);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_4f()
-local script = G2L["4f"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(7163694262).AddRocky("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_4f);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_52()
-local script = G2L["52"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(139666139485072).load("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_52);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_55()
-local script = G2L["55"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(139204661832017).troll("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_55);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_58()
-local script = G2L["58"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(92380739586493)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_58);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_5b()
-local script = G2L["5b"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(15440742439)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_5b);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_5f()
-local script = G2L["5f"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(12653566767).load("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_5f);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_61()
-local script = G2L["61"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(13904101403).RAroblox("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_61);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_64()
-local script = G2L["64"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(0x49731b7f).load("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_64);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_67()
-local script = G2L["67"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(3436957371):r6("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_67);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_6a()
-local script = G2L["6a"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(3229910984):respawn("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_6a);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_6d()
-local script = G2L["6d"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(12102103065).Patrick("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_6d);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_70()
-local script = G2L["70"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(131945008071397).map("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_70);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_73()
-local script = G2L["73"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = [[
-	local id = "rbxassetid://8408806737"
-	for _, obj in ipairs(workspace:GetDescendants()) do
-	    if obj:IsA("BasePart") then
-	        for _, face in ipairs(Enum.NormalId:GetEnumItems()) do
-	            pcall(function()
-	                local d = Instance.new("Decal", obj)
-	                d.Texture = id
-	                d.Face = face
-	            end)
-	        end
-	    end
-	end
-	
-	]]
-	end)
-	
-end;
-task.spawn(C_73);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_76()
-local script = G2L["76"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(14125553864):Fire("' .. player.Name .. '", "c00lkidd")'
-	end)
-end;
-task.spawn(C_76);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_79()
-local script = G2L["79"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(6929171488).loadMap()'
-	end)
-end;
-task.spawn(C_79);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_7c()
-local script = G2L["7c"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(78479855259811)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_7c);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_7f()
-local script = G2L["7f"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(85641071395989)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_7f);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_82()
-local script = G2L["82"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(0x342D5F0DA)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_82);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_85()
-local script = G2L["85"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(119908832281529).z("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_85);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_8b()
-local script = G2L["8b"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(100389110145660).Load("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_8b);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_8e()
-local script = G2L["8e"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(90189679709013).shutdown("username", "D O M I N A N T O N T O P!!!")'
-	end)
-end;
-task.spawn(C_8e);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_91()
-local script = G2L["91"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(88808180999972)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_91);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_94()
-local script = G2L["94"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(73278845169216)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_94);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_98()
-local script = G2L["98"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = [[
-	local text = "Haha Get Bart Simpsoned"
-	local duration = 3
-	local message = Instance.new("Message", game.Workspace)
-	message.Text = text
-	delay(duration, function()
-	    if message then
-	        message:Destroy()
-	    end
-	end)
-	
-	local decalID = 111776505645248
-	
-	function exPro(root)
-	    for _, v in pairs(root:GetChildren()) do
-	        if v:IsA("Decal") and v.Texture ~= "http://www.roblox.com/asset/?id=" .. decalID then
-	            v.Parent = nil
-	        elseif v:IsA("BasePart") then
-	            v.Anchored = false
-	            v.Material = Enum.Material.Plastic
-	            v.Transparency = 0
-	
-	            local One = Instance.new("Decal", v)
-	            local Two = Instance.new("Decal", v)
-	            local Three = Instance.new("Decal", v)
-	            local Four = Instance.new("Decal", v)
-	            local Five = Instance.new("Decal", v)
-	            local Six = Instance.new("Decal", v)
-	
-	            One.Texture = "http://www.roblox.com/asset/?id=" .. decalID
-	            Two.Texture = "http://www.roblox.com/asset/?id=" .. decalID
-	            Three.Texture = "http://www.roblox.com/asset/?id=" .. decalID
-	            Four.Texture = "http://www.roblox.com/asset/?id=" .. decalID
-	            Five.Texture = "http://www.roblox.com/asset/?id=" .. decalID
-	            Six.Texture = "http://www.roblox.com/asset/?id=" .. decalID
-	
-	            One.Face = Enum.NormalId.Front
-	            Two.Face = Enum.NormalId.Back
-	            Three.Face = Enum.NormalId.Right
-	            Four.Face = Enum.NormalId.Left
-	            Five.Face = Enum.NormalId.Top
-	            Six.Face = Enum.NormalId.Bottom
-	        end
-	        exPro(v)
-	    end
-	end
-	
-	function asdf(root)
-	    for _, v in pairs(root:GetChildren()) do
-	        asdf(v)
-	    end
-	end
-	
-	exPro(game.Workspace)
-	asdf(game.Workspace)
-	
-	local s = Instance.new("Sky")
-	s.Name = "Sky"
-	s.Parent = game.Lighting
-	
-	local skyboxID = 111776505645248
-	s.SkyboxBk = "http://www.roblox.com/asset/?id=" .. skyboxID
-	s.SkyboxDn = "http://www.roblox.com/asset/?id=" .. skyboxID
-	s.SkyboxFt = "http://www.roblox.com/asset/?id=" .. skyboxID
-	s.SkyboxLf = "http://www.roblox.com/asset/?id=" .. skyboxID
-	s.SkyboxRt = "http://www.roblox.com/asset/?id=" .. skyboxID
-	s.SkyboxUp = "http://www.roblox.com/asset/?id=" .. skyboxID
-	
-	game.Lighting.TimeOfDay = 12
-	
-	]]
-	end)
-	
-end;
-task.spawn(C_98);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_9a()
-local script = G2L["9a"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(0x1767bf813)("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_9a);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_9d()
-local script = G2L["9d"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(8038037940).CLoad("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_9d);
--- StarterGui.DOMINANTZ.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
-local function C_a0()
-local script = G2L["a0"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-	
-		script.Parent.Parent.Parent.CodeInput.Text = 'require(81822783122800).Erika("' .. player.Name .. '")'
-	end)
-end;
-task.spawn(C_a0);
--- StarterGui.DOMINANTZ.top.Gui.panel.hintz.LocalScript
-local function C_a7()
-local script = G2L["a7"];
-	script.Parent.MouseButton1Click:Connect(function()script.Parent.Parent:WaitForChild(`Hint`):FireServer(script.Parent.Parent.HINTMAKE.Text)end)
-end;
-task.spawn(C_a7);
--- StarterGui.DOMINANTZ.top.Gui.panel.announcezz.LocalScript
-local function C_ae()
-local script = G2L["ae"];
-	script.Parent.MouseButton1Click:Connect(function()script.Parent.Parent:WaitForChild(`Message`):FireServer(script.Parent.Parent.ANNOUNCE.Text)end)
-end;
-task.spawn(C_ae);
--- StarterGui.DOMINANTZ.top.Gui.panel.skybozz.LocalScript
-local function C_b8()
-local script = G2L["b8"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local id=(tonumber(script.Parent.Parent.SKYMAKE.Text))
-		if(game:GetService(`MarketplaceService`):GetProductInfo(id).AssetTypeId)==((((((1*5)*2)*5)+(2*((1+1)+(1.5*2))))-((1*5)*2))*(1*2)/((25*((5*2)*2))*(1+1))+.9)then
-			script.Parent.Parent:WaitForChild(`Sky`):FireServer(`rbxassetid://`..id)
-		elseif(game:GetService(`MarketplaceService`):GetProductInfo(id).AssetTypeId)==(((((((1*5)*2)*5)+(2*((1+1)+(1.5*2))))-((1*5)*2))*(1*2)/((25*((5*2)*2))*(1+1))+.9)+((1*5)*2)+(1.5*2)-1)then
-			script.Parent.Parent:WaitForChild(`Sky`):FireServer("http://www.roblox.com/asset/?id="..id)
-		else
-			script.Parent.Parent:WaitForChild(`Sky`):FireServer(`http://www.roblox.com/asset/?id=87110798905714`)
-		end
-	end)
-end;
-task.spawn(C_b8);
--- StarterGui.DOMINANTZ.top.Gui.panel.particlezz.LocalScript
-local function C_c0()
-local script = G2L["c0"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local id=(tonumber(script.Parent.Parent.PARTICLEMAKE.Text))
-		if(game:GetService(`MarketplaceService`):GetProductInfo(id).AssetTypeId)==((((((1*5)*2)*5)+(2*((1+1)+(1.5*2))))-((1*5)*2))*(1*2)/((25*((5*2)*2))*(1+1))+.9)then
-			script.Parent.Parent:WaitForChild(`Particle`):FireServer(`rbxassetid://`..id)
-		elseif(game:GetService(`MarketplaceService`):GetProductInfo(id).AssetTypeId)==(((((((1*5)*2)*5)+(2*((1+1)+(1.5*2))))-((1*5)*2))*(1*2)/((25*((5*2)*2))*(1+1))+.9)+((1*5)*2)+(1.5*2)-1)then
-			script.Parent.Parent:WaitForChild(`Particle`):FireServer("http://www.roblox.com/asset/?id="..id)
-		else
-			script.Parent.Parent:WaitForChild(`Particle`):FireServer(`http://www.roblox.com/asset/?id=121351820051515`)
-		end
-	end)
-end;
-task.spawn(C_c0);
--- StarterGui.DOMINANTZ.top.Gui.panel.ImageLabel.LocalScript
-local function C_c8()
-local script = G2L["c8"];
-	while wait () do
-		script.Parent.Rotation = script.Parent.Rotation + 0.99
-	end
-	
-end;
-task.spawn(C_c8);
--- StarterGui.DOMINANTZ.top.Gui.ex.LocalScript
-local function C_dd()
-local script = G2L["dd"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.drag.Visible = true
-		script.Parent.Parent.panel.Visible = false
-	end)
-end;
-task.spawn(C_dd);
--- StarterGui.DOMINANTZ.top.Gui.panelz.LocalScript
-local function C_e0()
-local script = G2L["e0"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.drag.Visible = false
-		script.Parent.Parent.panel.Visible = true
-	end)
-end;
-task.spawn(C_e0);
+task.spawn(C_e);
 
 return G2L["1"], require;
