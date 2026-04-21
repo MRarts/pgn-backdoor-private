@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 288 | Scripts: 88 | Modules: 0 | Tags: 0
+-- Instances: 309 | Scripts: 95 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.projectglock
@@ -224,7 +224,7 @@ G2L["16"]["Position"] = UDim2.new(0.20931, 0, 0.69031, 0);
 -- StarterGui.projectglock.top.Gui.drag.ScrollingFrame
 G2L["17"] = Instance.new("ScrollingFrame", G2L["f"]);
 G2L["17"]["Active"] = true;
-G2L["17"]["CanvasPosition"] = Vector2.new(0, 603);
+G2L["17"]["CanvasPosition"] = Vector2.new(0, 723);
 G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["17"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY;
 G2L["17"]["Size"] = UDim2.new(0, 124, 0, 343);
@@ -1715,836 +1715,997 @@ G2L["d8"] = Instance.new("Script", G2L["d6"]);
 
 
 
--- StarterGui.projectglock.top.Gui.drag.ImageLabel
-G2L["d9"] = Instance.new("ImageLabel", G2L["f"]);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton
+G2L["d9"] = Instance.new("TextButton", G2L["17"]);
 G2L["d9"]["BorderSizePixel"] = 0;
+G2L["d9"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["d9"]["TextSize"] = 14;
+G2L["d9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["d9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d9"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d9"]["Image"] = [[rbxassetid://105540078]];
-G2L["d9"]["Size"] = UDim2.new(0, 43, 0, 54);
-G2L["d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d9"]["BackgroundTransparency"] = 1;
-G2L["d9"]["Position"] = UDim2.new(0, 0, 0.86434, 0);
+G2L["d9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d9"]["Size"] = UDim2.new(0, 131, 0, 15);
+G2L["d9"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
+G2L["d9"]["Text"] = [[a10.txt]];
 
 
--- StarterGui.projectglock.top.Gui.drag.TextLabel
-G2L["da"] = Instance.new("TextLabel", G2L["f"]);
-G2L["da"]["TextWrapped"] = true;
-G2L["da"]["BorderSizePixel"] = 0;
-G2L["da"]["TextSize"] = 14;
-G2L["da"]["TextScaled"] = true;
-G2L["da"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["da"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["da"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["da"]["BackgroundTransparency"] = 1;
-G2L["da"]["Size"] = UDim2.new(0, 99, 0, 12);
-G2L["da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["da"]["Text"] = [[.gg/FMS68R4jhZ]];
-G2L["da"]["Position"] = UDim2.new(0.03106, 0, 0.94892, 0);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+G2L["da"] = Instance.new("LocalScript", G2L["d9"]);
 
 
--- StarterGui.projectglock.top.Gui.drag.TextLabel
-G2L["db"] = Instance.new("TextLabel", G2L["f"]);
-G2L["db"]["TextWrapped"] = true;
-G2L["db"]["BorderSizePixel"] = 0;
-G2L["db"]["TextSize"] = 14;
-G2L["db"]["TextScaled"] = true;
-G2L["db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["db"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["db"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["db"]["BackgroundTransparency"] = 1;
-G2L["db"]["Size"] = UDim2.new(0, 99, 0, 12);
-G2L["db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["db"]["Text"] = [[Project Glock]];
-G2L["db"]["Position"] = UDim2.new(0.04193, 0, 0.90591, 0);
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.Script
+G2L["db"] = Instance.new("Script", G2L["d9"]);
 
 
--- StarterGui.projectglock.top.Gui.drag.yea
-G2L["dc"] = Instance.new("TextLabel", G2L["f"]);
-G2L["dc"]["TextSize"] = 14;
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton
+G2L["dc"] = Instance.new("TextButton", G2L["17"]);
+G2L["dc"]["BorderSizePixel"] = 0;
 G2L["dc"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["dc"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["dc"]["TextSize"] = 14;
 G2L["dc"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["dc"]["BackgroundTransparency"] = 1;
-G2L["dc"]["Size"] = UDim2.new(0, 373, 0, 19);
-G2L["dc"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["dc"]["Text"] = [[[PGS] : .gg/FMS68R4jhZ]];
-G2L["dc"]["Name"] = [[yea]];
-G2L["dc"]["Position"] = UDim2.new(0.20931, 0, 0.71719, 0);
+G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["dc"]["Size"] = UDim2.new(0, 131, 0, 15);
+G2L["dc"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
+G2L["dc"]["Text"] = [[neko.txt]];
 
 
--- StarterGui.projectglock.top.Gui.drag.yea
-G2L["dd"] = Instance.new("TextLabel", G2L["f"]);
-G2L["dd"]["TextSize"] = 14;
-G2L["dd"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["dd"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["dd"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["dd"]["BackgroundTransparency"] = 1;
-G2L["dd"]["Size"] = UDim2.new(0, 373, 0, 19);
-G2L["dd"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["dd"]["Text"] = [[[PGS] : You are whitelisted!]];
-G2L["dd"]["Name"] = [[yea]];
-G2L["dd"]["Position"] = UDim2.new(0.20931, 0, 0.74408, 0);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+G2L["dd"] = Instance.new("LocalScript", G2L["dc"]);
 
 
--- StarterGui.projectglock.top.Gui.panel
-G2L["de"] = Instance.new("Frame", G2L["e"]);
-G2L["de"]["Visible"] = false;
-G2L["de"]["Active"] = true;
-G2L["de"]["BackgroundColor3"] = Color3.fromRGB(246, 246, 246);
-G2L["de"]["Size"] = UDim2.new(0, 644, 0, 372);
-G2L["de"]["Position"] = UDim2.new(0, 0, 0.00088, 0);
-G2L["de"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["de"]["Name"] = [[panel]];
-G2L["de"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.Script
+G2L["de"] = Instance.new("Script", G2L["dc"]);
 
 
--- StarterGui.projectglock.top.Gui.panel.ImageLabel
-G2L["df"] = Instance.new("ImageLabel", G2L["de"]);
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton
+G2L["df"] = Instance.new("TextButton", G2L["17"]);
 G2L["df"]["BorderSizePixel"] = 0;
+G2L["df"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["df"]["TextSize"] = 14;
+G2L["df"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["df"]["ImageColor3"] = Color3.fromRGB(9, 9, 9);
-G2L["df"]["Image"] = [[rbxassetid://105540078]];
-G2L["df"]["Size"] = UDim2.new(0, 102, 0, 124);
-G2L["df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["df"]["BackgroundTransparency"] = 1;
-G2L["df"]["Position"] = UDim2.new(0.41949, 0, 0.04861, 0);
+G2L["df"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["df"]["Size"] = UDim2.new(0, 131, 0, 15);
+G2L["df"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
+G2L["df"]["Text"] = [[suic gun]];
 
 
--- StarterGui.projectglock.top.Gui.panel.ImageLabel.LocalScript
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
 G2L["e0"] = Instance.new("LocalScript", G2L["df"]);
 
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["e1"] = Instance.new("TextLabel", G2L["de"]);
-G2L["e1"]["TextWrapped"] = true;
-G2L["e1"]["TextSize"] = 20;
-G2L["e1"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e1"]["Size"] = UDim2.new(0, 200, 0, 213);
-G2L["e1"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["e1"]["Text"] = [[CREDITS]];
-G2L["e1"]["Position"] = UDim2.new(0.34317, 0, 0.38172, 0);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.Script
+G2L["e1"] = Instance.new("Script", G2L["df"]);
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["e2"] = Instance.new("TextLabel", G2L["de"]);
-G2L["e2"]["TextWrapped"] = true;
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton
+G2L["e2"] = Instance.new("TextButton", G2L["17"]);
+G2L["e2"]["BorderSizePixel"] = 0;
+G2L["e2"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["e2"]["TextSize"] = 14;
-G2L["e2"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["e2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e2"]["BackgroundTransparency"] = 1;
-G2L["e2"]["Size"] = UDim2.new(0, 200, 0, 25);
-G2L["e2"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["e2"]["Text"] = [[.pgn - made evrerything]];
-G2L["e2"]["Position"] = UDim2.new(0.34317, 0, 0.44086, 0);
+G2L["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e2"]["Size"] = UDim2.new(0, 131, 0, 15);
+G2L["e2"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
+G2L["e2"]["Text"] = [[FEController.txt]];
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["e3"] = Instance.new("TextLabel", G2L["de"]);
-G2L["e3"]["TextWrapped"] = true;
-G2L["e3"]["TextSize"] = 14;
-G2L["e3"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["e3"]["TextScaled"] = true;
-G2L["e3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e3"]["BackgroundTransparency"] = 1;
-G2L["e3"]["Size"] = UDim2.new(0, 200, 0, 25);
-G2L["e3"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["e3"]["Text"] = [[owners of dominate - took inspriation from them]];
-G2L["e3"]["Position"] = UDim2.new(0.34317, 0, 0.48656, 0);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+G2L["e3"] = Instance.new("LocalScript", G2L["e2"]);
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["e4"] = Instance.new("TextLabel", G2L["de"]);
-G2L["e4"]["TextWrapped"] = true;
-G2L["e4"]["TextSize"] = 22;
-G2L["e4"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e4"]["BackgroundTransparency"] = 1;
-G2L["e4"]["Size"] = UDim2.new(0, 200, 0, 25);
-G2L["e4"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["e4"]["Text"] = [[cool poeple]];
-G2L["e4"]["Position"] = UDim2.new(0.34317, 0, 0.55376, 0);
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.Script
+G2L["e4"] = Instance.new("Script", G2L["e2"]);
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["e5"] = Instance.new("TextLabel", G2L["de"]);
-G2L["e5"]["TextWrapped"] = true;
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton
+G2L["e5"] = Instance.new("TextButton", G2L["17"]);
+G2L["e5"]["BorderSizePixel"] = 0;
+G2L["e5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["e5"]["TextSize"] = 14;
-G2L["e5"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["e5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["e5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e5"]["BackgroundTransparency"] = 1;
-G2L["e5"]["Size"] = UDim2.new(0, 200, 0, 19);
-G2L["e5"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["e5"]["Text"] = [[Kai_110011 (hes .pgn)]];
-G2L["e5"]["Position"] = UDim2.new(0.34317, 0, 0.62097, 0);
+G2L["e5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e5"]["Size"] = UDim2.new(0, 131, 0, 15);
+G2L["e5"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
+G2L["e5"]["Text"] = [[AdPopUps.txt]];
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["e6"] = Instance.new("TextLabel", G2L["de"]);
-G2L["e6"]["TextWrapped"] = true;
-G2L["e6"]["TextSize"] = 14;
-G2L["e6"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["e6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e6"]["BackgroundTransparency"] = 1;
-G2L["e6"]["Size"] = UDim2.new(0, 200, 0, 19);
-G2L["e6"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["e6"]["Text"] = [[Ternet_1 (best friend)]];
-G2L["e6"]["Position"] = UDim2.new(0.34317, 0, 0.65591, 0);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+G2L["e6"] = Instance.new("LocalScript", G2L["e5"]);
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["e7"] = Instance.new("TextLabel", G2L["de"]);
-G2L["e7"]["TextWrapped"] = true;
-G2L["e7"]["TextSize"] = 14;
-G2L["e7"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e7"]["BackgroundTransparency"] = 1;
-G2L["e7"]["Size"] = UDim2.new(0, 200, 0, 19);
-G2L["e7"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["e7"]["Text"] = [[altered954 (cool person)]];
-G2L["e7"]["Position"] = UDim2.new(0.34317, 0, 0.69086, 0);
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.Script
+G2L["e7"] = Instance.new("Script", G2L["e5"]);
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["e8"] = Instance.new("TextLabel", G2L["de"]);
-G2L["e8"]["TextWrapped"] = true;
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton
+G2L["e8"] = Instance.new("TextButton", G2L["17"]);
+G2L["e8"]["BorderSizePixel"] = 0;
+G2L["e8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["e8"]["TextSize"] = 14;
-G2L["e8"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["e8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["e8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e8"]["BackgroundTransparency"] = 1;
-G2L["e8"]["Size"] = UDim2.new(0, 200, 0, 19);
-G2L["e8"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["e8"]["Text"] = [[crazykid9832]];
-G2L["e8"]["Position"] = UDim2.new(0.34317, 0, 0.72312, 0);
+G2L["e8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e8"]["Size"] = UDim2.new(0, 131, 0, 15);
+G2L["e8"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
+G2L["e8"]["Text"] = [[Kidnap.txt]];
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["e9"] = Instance.new("TextLabel", G2L["de"]);
-G2L["e9"]["TextWrapped"] = true;
-G2L["e9"]["TextSize"] = 14;
-G2L["e9"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["e9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e9"]["BackgroundTransparency"] = 1;
-G2L["e9"]["Size"] = UDim2.new(0, 200, 0, 19);
-G2L["e9"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["e9"]["Text"] = [[helo (best buddie)]];
-G2L["e9"]["Position"] = UDim2.new(0.34317, 0, 0.75806, 0);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+G2L["e9"] = Instance.new("LocalScript", G2L["e8"]);
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["ea"] = Instance.new("TextLabel", G2L["de"]);
-G2L["ea"]["TextWrapped"] = true;
-G2L["ea"]["TextSize"] = 14;
-G2L["ea"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["ea"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ea"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ea"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ea"]["BackgroundTransparency"] = 1;
-G2L["ea"]["Size"] = UDim2.new(0, 200, 0, 19);
-G2L["ea"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["ea"]["Text"] = [[xylex (best lua coder)]];
-G2L["ea"]["Position"] = UDim2.new(0.34317, 0, 0.79301, 0);
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.Script
+G2L["ea"] = Instance.new("Script", G2L["e8"]);
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["eb"] = Instance.new("TextLabel", G2L["de"]);
-G2L["eb"]["TextWrapped"] = true;
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton
+G2L["eb"] = Instance.new("TextButton", G2L["17"]);
+G2L["eb"]["BorderSizePixel"] = 0;
+G2L["eb"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["eb"]["TextSize"] = 14;
-G2L["eb"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["eb"]["TextScaled"] = true;
-G2L["eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["eb"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["eb"]["BackgroundTransparency"] = 1;
-G2L["eb"]["Size"] = UDim2.new(0, 200, 0, 41);
-G2L["eb"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["eb"]["Text"] = [[PROJECT GLOCK]];
-G2L["eb"]["Position"] = UDim2.new(0.34317, 0, 0.87097, 0);
+G2L["eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["eb"]["Size"] = UDim2.new(0, 131, 0, 15);
+G2L["eb"]["BorderColor3"] = Color3.fromRGB(187, 187, 187);
+G2L["eb"]["Text"] = [[bodyguards.txt]];
+
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+G2L["ec"] = Instance.new("LocalScript", G2L["eb"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.Script
+G2L["ed"] = Instance.new("Script", G2L["eb"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.drag.ImageLabel
+G2L["ee"] = Instance.new("ImageLabel", G2L["f"]);
+G2L["ee"]["BorderSizePixel"] = 0;
+G2L["ee"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ee"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ee"]["Image"] = [[rbxassetid://105540078]];
+G2L["ee"]["Size"] = UDim2.new(0, 43, 0, 54);
+G2L["ee"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ee"]["BackgroundTransparency"] = 1;
+G2L["ee"]["Position"] = UDim2.new(0, 0, 0.86434, 0);
+
+
+-- StarterGui.projectglock.top.Gui.drag.TextLabel
+G2L["ef"] = Instance.new("TextLabel", G2L["f"]);
+G2L["ef"]["TextWrapped"] = true;
+G2L["ef"]["BorderSizePixel"] = 0;
+G2L["ef"]["TextSize"] = 14;
+G2L["ef"]["TextScaled"] = true;
+G2L["ef"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ef"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ef"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ef"]["BackgroundTransparency"] = 1;
+G2L["ef"]["Size"] = UDim2.new(0, 99, 0, 12);
+G2L["ef"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ef"]["Text"] = [[.gg/FMS68R4jhZ]];
+G2L["ef"]["Position"] = UDim2.new(0.03106, 0, 0.94892, 0);
+
+
+-- StarterGui.projectglock.top.Gui.drag.TextLabel
+G2L["f0"] = Instance.new("TextLabel", G2L["f"]);
+G2L["f0"]["TextWrapped"] = true;
+G2L["f0"]["BorderSizePixel"] = 0;
+G2L["f0"]["TextSize"] = 14;
+G2L["f0"]["TextScaled"] = true;
+G2L["f0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f0"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f0"]["BackgroundTransparency"] = 1;
+G2L["f0"]["Size"] = UDim2.new(0, 99, 0, 12);
+G2L["f0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f0"]["Text"] = [[Project Glock]];
+G2L["f0"]["Position"] = UDim2.new(0.04193, 0, 0.90591, 0);
+
+
+-- StarterGui.projectglock.top.Gui.drag.yea
+G2L["f1"] = Instance.new("TextLabel", G2L["f"]);
+G2L["f1"]["TextSize"] = 14;
+G2L["f1"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["f1"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["f1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f1"]["BackgroundTransparency"] = 1;
+G2L["f1"]["Size"] = UDim2.new(0, 373, 0, 19);
+G2L["f1"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["f1"]["Text"] = [[[PGS] : .gg/FMS68R4jhZ]];
+G2L["f1"]["Name"] = [[yea]];
+G2L["f1"]["Position"] = UDim2.new(0.20931, 0, 0.71719, 0);
+
+
+-- StarterGui.projectglock.top.Gui.drag.yea
+G2L["f2"] = Instance.new("TextLabel", G2L["f"]);
+G2L["f2"]["TextSize"] = 14;
+G2L["f2"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["f2"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["f2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f2"]["BackgroundTransparency"] = 1;
+G2L["f2"]["Size"] = UDim2.new(0, 373, 0, 19);
+G2L["f2"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["f2"]["Text"] = [[[PGS] : You are whitelisted!]];
+G2L["f2"]["Name"] = [[yea]];
+G2L["f2"]["Position"] = UDim2.new(0.20931, 0, 0.74408, 0);
+
+
+-- StarterGui.projectglock.top.Gui.panel
+G2L["f3"] = Instance.new("Frame", G2L["e"]);
+G2L["f3"]["Visible"] = false;
+G2L["f3"]["Active"] = true;
+G2L["f3"]["BackgroundColor3"] = Color3.fromRGB(246, 246, 246);
+G2L["f3"]["Size"] = UDim2.new(0, 644, 0, 372);
+G2L["f3"]["Position"] = UDim2.new(0, 0, 0.00088, 0);
+G2L["f3"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+G2L["f3"]["Name"] = [[panel]];
+G2L["f3"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.projectglock.top.Gui.panel.ImageLabel
+G2L["f4"] = Instance.new("ImageLabel", G2L["f3"]);
+G2L["f4"]["BorderSizePixel"] = 0;
+G2L["f4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f4"]["ImageColor3"] = Color3.fromRGB(9, 9, 9);
+G2L["f4"]["Image"] = [[rbxassetid://105540078]];
+G2L["f4"]["Size"] = UDim2.new(0, 102, 0, 124);
+G2L["f4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f4"]["BackgroundTransparency"] = 1;
+G2L["f4"]["Position"] = UDim2.new(0.41949, 0, 0.04861, 0);
+
+
+-- StarterGui.projectglock.top.Gui.panel.ImageLabel.LocalScript
+G2L["f5"] = Instance.new("LocalScript", G2L["f4"]);
+
 
 
 -- StarterGui.projectglock.top.Gui.panel.TextLabel
-G2L["ec"] = Instance.new("TextLabel", G2L["de"]);
-G2L["ec"]["TextWrapped"] = true;
-G2L["ec"]["BorderSizePixel"] = 0;
-G2L["ec"]["TextSize"] = 14;
-G2L["ec"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ec"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ec"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
-G2L["ec"]["BackgroundTransparency"] = 1;
-G2L["ec"]["Size"] = UDim2.new(0, 200, 0, 32);
-G2L["ec"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ec"]["Text"] = [[USER]];
-G2L["ec"]["Position"] = UDim2.new(0.34167, 0, 0.80743, 0);
+G2L["f6"] = Instance.new("TextLabel", G2L["f3"]);
+G2L["f6"]["TextWrapped"] = true;
+G2L["f6"]["TextSize"] = 20;
+G2L["f6"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["f6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f6"]["Size"] = UDim2.new(0, 200, 0, 213);
+G2L["f6"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["f6"]["Text"] = [[CREDITS]];
+G2L["f6"]["Position"] = UDim2.new(0.34317, 0, 0.38172, 0);
 
 
--- StarterGui.projectglock.top.Gui.panel.TextLabel.LocalScript
-G2L["ed"] = Instance.new("LocalScript", G2L["ec"]);
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["f7"] = Instance.new("TextLabel", G2L["f3"]);
+G2L["f7"]["TextWrapped"] = true;
+G2L["f7"]["TextSize"] = 14;
+G2L["f7"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["f7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f7"]["BackgroundTransparency"] = 1;
+G2L["f7"]["Size"] = UDim2.new(0, 200, 0, 25);
+G2L["f7"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["f7"]["Text"] = [[.pgn - made evrerything]];
+G2L["f7"]["Position"] = UDim2.new(0.34317, 0, 0.44086, 0);
 
 
-
--- StarterGui.projectglock.top.Gui.panel.TextLabel.Script
-G2L["ee"] = Instance.new("Script", G2L["ec"]);
-
-
-
--- StarterGui.projectglock.top.Gui.ex
-G2L["ef"] = Instance.new("TextButton", G2L["e"]);
-G2L["ef"]["TextSize"] = 14;
-G2L["ef"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ef"]["BackgroundColor3"] = Color3.fromRGB(249, 249, 249);
-G2L["ef"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ef"]["Size"] = UDim2.new(0, 63, 0, 17);
-G2L["ef"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["ef"]["Text"] = [[Executor]];
-G2L["ef"]["Name"] = [[ex]];
-G2L["ef"]["Position"] = UDim2.new(0.008, 0, 0, 2);
-
-
--- StarterGui.projectglock.top.Gui.ex.LocalScript
-G2L["f0"] = Instance.new("LocalScript", G2L["ef"]);
-
-
-
--- StarterGui.projectglock.top.Gui.ex.Script
-G2L["f1"] = Instance.new("Script", G2L["ef"]);
-
-
-
--- StarterGui.projectglock.top.Gui.panelz
-G2L["f2"] = Instance.new("TextButton", G2L["e"]);
-G2L["f2"]["TextSize"] = 14;
-G2L["f2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f2"]["BackgroundColor3"] = Color3.fromRGB(249, 249, 249);
-G2L["f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f2"]["Size"] = UDim2.new(0, 79, 0, 17);
-G2L["f2"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["f2"]["Text"] = [[Credits]];
-G2L["f2"]["Name"] = [[panelz]];
-G2L["f2"]["Position"] = UDim2.new(0.23665, 7, 0, 2);
-
-
--- StarterGui.projectglock.top.Gui.panelz.LocalScript
-G2L["f3"] = Instance.new("LocalScript", G2L["f2"]);
-
-
-
--- StarterGui.projectglock.top.Gui.panelz.Script
-G2L["f4"] = Instance.new("Script", G2L["f2"]);
-
-
-
--- StarterGui.projectglock.top.Gui.info
-G2L["f5"] = Instance.new("TextButton", G2L["e"]);
-G2L["f5"]["TextSize"] = 14;
-G2L["f5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f5"]["BackgroundColor3"] = Color3.fromRGB(249, 249, 249);
-G2L["f5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f5"]["Size"] = UDim2.new(0, 79, 0, 17);
-G2L["f5"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["f5"]["Text"] = [[Info]];
-G2L["f5"]["Name"] = [[info]];
-G2L["f5"]["Position"] = UDim2.new(0.10155, 7, 0, 2);
-
-
--- StarterGui.projectglock.top.Gui.info.LocalScript
-G2L["f6"] = Instance.new("LocalScript", G2L["f5"]);
-
-
-
--- StarterGui.projectglock.top.Gui.info.Script
-G2L["f7"] = Instance.new("Script", G2L["f5"]);
-
-
-
--- StarterGui.projectglock.top.Gui.Info
-G2L["f8"] = Instance.new("Frame", G2L["e"]);
-G2L["f8"]["Visible"] = false;
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["f8"] = Instance.new("TextLabel", G2L["f3"]);
+G2L["f8"]["TextWrapped"] = true;
+G2L["f8"]["TextSize"] = 14;
+G2L["f8"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["f8"]["TextScaled"] = true;
 G2L["f8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f8"]["Size"] = UDim2.new(0, 627, 0, 340);
-G2L["f8"]["Position"] = UDim2.new(0.00932, 0, 0.0672, 0);
+G2L["f8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f8"]["BackgroundTransparency"] = 1;
+G2L["f8"]["Size"] = UDim2.new(0, 200, 0, 25);
 G2L["f8"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
-G2L["f8"]["Name"] = [[Info]];
+G2L["f8"]["Text"] = [[owners of dominate - took inspriation from them]];
+G2L["f8"]["Position"] = UDim2.new(0.34317, 0, 0.48656, 0);
 
 
--- StarterGui.projectglock.top.Gui.Info.LocalScript
-G2L["f9"] = Instance.new("LocalScript", G2L["f8"]);
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["f9"] = Instance.new("TextLabel", G2L["f3"]);
+G2L["f9"]["TextWrapped"] = true;
+G2L["f9"]["TextSize"] = 22;
+G2L["f9"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["f9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f9"]["BackgroundTransparency"] = 1;
+G2L["f9"]["Size"] = UDim2.new(0, 200, 0, 25);
+G2L["f9"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["f9"]["Text"] = [[cool poeple]];
+G2L["f9"]["Position"] = UDim2.new(0.34317, 0, 0.55376, 0);
 
 
-
--- StarterGui.projectglock.top.Gui.Info.TextLabel
-G2L["fa"] = Instance.new("TextLabel", G2L["f8"]);
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["fa"] = Instance.new("TextLabel", G2L["f3"]);
 G2L["fa"]["TextWrapped"] = true;
-G2L["fa"]["BorderSizePixel"] = 0;
-G2L["fa"]["TextSize"] = 20;
-G2L["fa"]["TextScaled"] = true;
+G2L["fa"]["TextSize"] = 14;
+G2L["fa"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["fa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["fa"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["fa"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["fa"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["fa"]["BackgroundTransparency"] = 1;
-G2L["fa"]["Size"] = UDim2.new(0, 254, 0, 60);
-G2L["fa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fa"]["Text"] = [[USER]];
-G2L["fa"]["Position"] = UDim2.new(0.30072, 0, 0.17235, 0);
+G2L["fa"]["Size"] = UDim2.new(0, 200, 0, 19);
+G2L["fa"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["fa"]["Text"] = [[Kai_110011 (hes .pgn)]];
+G2L["fa"]["Position"] = UDim2.new(0.34317, 0, 0.62097, 0);
 
 
--- StarterGui.projectglock.top.Gui.Info.TextLabel.LocalScript
-G2L["fb"] = Instance.new("LocalScript", G2L["fa"]);
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["fb"] = Instance.new("TextLabel", G2L["f3"]);
+G2L["fb"]["TextWrapped"] = true;
+G2L["fb"]["TextSize"] = 14;
+G2L["fb"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["fb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["fb"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fb"]["BackgroundTransparency"] = 1;
+G2L["fb"]["Size"] = UDim2.new(0, 200, 0, 19);
+G2L["fb"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["fb"]["Text"] = [[Ternet_1 (best friend)]];
+G2L["fb"]["Position"] = UDim2.new(0.34317, 0, 0.65591, 0);
 
 
-
--- StarterGui.projectglock.top.Gui.Info.Time
-G2L["fc"] = Instance.new("TextLabel", G2L["f8"]);
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["fc"] = Instance.new("TextLabel", G2L["f3"]);
 G2L["fc"]["TextWrapped"] = true;
 G2L["fc"]["TextSize"] = 14;
-G2L["fc"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["fc"]["TextScaled"] = true;
+G2L["fc"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["fc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["fc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["fc"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["fc"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["fc"]["BackgroundTransparency"] = 1;
-G2L["fc"]["Size"] = UDim2.new(0, 120, 0, 26);
-G2L["fc"]["Text"] = [[Time: 15:42]];
-G2L["fc"]["Name"] = [[Time]];
-G2L["fc"]["Position"] = UDim2.new(0.07031, 0, 0.48405, 0);
+G2L["fc"]["Size"] = UDim2.new(0, 200, 0, 19);
+G2L["fc"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["fc"]["Text"] = [[altered954 (cool person)]];
+G2L["fc"]["Position"] = UDim2.new(0.34317, 0, 0.69086, 0);
 
 
--- StarterGui.projectglock.top.Gui.Info.Time.LocalScript
-G2L["fd"] = Instance.new("LocalScript", G2L["fc"]);
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["fd"] = Instance.new("TextLabel", G2L["f3"]);
+G2L["fd"]["TextWrapped"] = true;
+G2L["fd"]["TextSize"] = 14;
+G2L["fd"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["fd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["fd"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fd"]["BackgroundTransparency"] = 1;
+G2L["fd"]["Size"] = UDim2.new(0, 200, 0, 19);
+G2L["fd"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["fd"]["Text"] = [[crazykid9832]];
+G2L["fd"]["Position"] = UDim2.new(0.34317, 0, 0.72312, 0);
 
 
-
--- StarterGui.projectglock.top.Gui.Info.placeid
-G2L["fe"] = Instance.new("TextLabel", G2L["f8"]);
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["fe"] = Instance.new("TextLabel", G2L["f3"]);
 G2L["fe"]["TextWrapped"] = true;
-G2L["fe"]["BorderSizePixel"] = 0;
-G2L["fe"]["TextSize"] = 18;
-G2L["fe"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["fe"]["TextScaled"] = true;
+G2L["fe"]["TextSize"] = 14;
+G2L["fe"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["fe"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["fe"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["fe"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["fe"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["fe"]["BackgroundTransparency"] = 1;
-G2L["fe"]["Size"] = UDim2.new(0, 210, 0, 43);
-G2L["fe"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fe"]["Text"] = [[Place ID: 79708510013562 (dont ban me roblix)]];
-G2L["fe"]["Name"] = [[placeid]];
-G2L["fe"]["Position"] = UDim2.new(0.66276, 0, 0.46023, 0);
+G2L["fe"]["Size"] = UDim2.new(0, 200, 0, 19);
+G2L["fe"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["fe"]["Text"] = [[helo (best buddie)]];
+G2L["fe"]["Position"] = UDim2.new(0.34317, 0, 0.75806, 0);
 
 
--- StarterGui.projectglock.top.Gui.Info.placeid.Script
-G2L["ff"] = Instance.new("Script", G2L["fe"]);
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["ff"] = Instance.new("TextLabel", G2L["f3"]);
+G2L["ff"]["TextWrapped"] = true;
+G2L["ff"]["TextSize"] = 14;
+G2L["ff"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["ff"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ff"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ff"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ff"]["BackgroundTransparency"] = 1;
+G2L["ff"]["Size"] = UDim2.new(0, 200, 0, 19);
+G2L["ff"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["ff"]["Text"] = [[xylex (best lua coder)]];
+G2L["ff"]["Position"] = UDim2.new(0.34317, 0, 0.79301, 0);
 
 
-
--- StarterGui.projectglock.top.Gui.Info.TextLabel
-G2L["100"] = Instance.new("TextLabel", G2L["f8"]);
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["100"] = Instance.new("TextLabel", G2L["f3"]);
 G2L["100"]["TextWrapped"] = true;
-G2L["100"]["BorderSizePixel"] = 0;
-G2L["100"]["TextSize"] = 20;
+G2L["100"]["TextSize"] = 14;
+G2L["100"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["100"]["TextScaled"] = true;
 G2L["100"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["100"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["100"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["100"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["100"]["BackgroundTransparency"] = 1;
-G2L["100"]["Size"] = UDim2.new(0, 254, 0, 60);
-G2L["100"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["100"]["Text"] = [[Your username is]];
-G2L["100"]["Position"] = UDim2.new(0.29594, 0, -0.00027, 0);
+G2L["100"]["Size"] = UDim2.new(0, 200, 0, 41);
+G2L["100"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["100"]["Text"] = [[PROJECT GLOCK]];
+G2L["100"]["Position"] = UDim2.new(0.34317, 0, 0.87097, 0);
 
 
--- StarterGui.projectglock.top.Gui.Info.TextLabel
-G2L["101"] = Instance.new("TextLabel", G2L["f8"]);
+-- StarterGui.projectglock.top.Gui.panel.TextLabel
+G2L["101"] = Instance.new("TextLabel", G2L["f3"]);
 G2L["101"]["TextWrapped"] = true;
 G2L["101"]["BorderSizePixel"] = 0;
-G2L["101"]["TextSize"] = 20;
-G2L["101"]["TextScaled"] = true;
+G2L["101"]["TextSize"] = 14;
 G2L["101"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["101"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["101"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
 G2L["101"]["BackgroundTransparency"] = 1;
-G2L["101"]["Size"] = UDim2.new(0, 211, 0, 45);
+G2L["101"]["Size"] = UDim2.new(0, 200, 0, 32);
 G2L["101"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["101"]["Text"] = [[The time for you is]];
-G2L["101"]["Position"] = UDim2.new(-0.00071, 0, 0.35092, 0);
+G2L["101"]["Text"] = [[USER]];
+G2L["101"]["Position"] = UDim2.new(0.34167, 0, 0.80743, 0);
+
+
+-- StarterGui.projectglock.top.Gui.panel.TextLabel.LocalScript
+G2L["102"] = Instance.new("LocalScript", G2L["101"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.panel.TextLabel.Script
+G2L["103"] = Instance.new("Script", G2L["101"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.ex
+G2L["104"] = Instance.new("TextButton", G2L["e"]);
+G2L["104"]["TextSize"] = 14;
+G2L["104"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["104"]["BackgroundColor3"] = Color3.fromRGB(249, 249, 249);
+G2L["104"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["104"]["Size"] = UDim2.new(0, 63, 0, 17);
+G2L["104"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+G2L["104"]["Text"] = [[Executor]];
+G2L["104"]["Name"] = [[ex]];
+G2L["104"]["Position"] = UDim2.new(0.008, 0, 0, 2);
+
+
+-- StarterGui.projectglock.top.Gui.ex.LocalScript
+G2L["105"] = Instance.new("LocalScript", G2L["104"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.ex.Script
+G2L["106"] = Instance.new("Script", G2L["104"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.panelz
+G2L["107"] = Instance.new("TextButton", G2L["e"]);
+G2L["107"]["TextSize"] = 14;
+G2L["107"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["107"]["BackgroundColor3"] = Color3.fromRGB(249, 249, 249);
+G2L["107"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["107"]["Size"] = UDim2.new(0, 79, 0, 17);
+G2L["107"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+G2L["107"]["Text"] = [[Credits]];
+G2L["107"]["Name"] = [[panelz]];
+G2L["107"]["Position"] = UDim2.new(0.23665, 7, 0, 2);
+
+
+-- StarterGui.projectglock.top.Gui.panelz.LocalScript
+G2L["108"] = Instance.new("LocalScript", G2L["107"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.panelz.Script
+G2L["109"] = Instance.new("Script", G2L["107"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.info
+G2L["10a"] = Instance.new("TextButton", G2L["e"]);
+G2L["10a"]["TextSize"] = 14;
+G2L["10a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10a"]["BackgroundColor3"] = Color3.fromRGB(249, 249, 249);
+G2L["10a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10a"]["Size"] = UDim2.new(0, 79, 0, 17);
+G2L["10a"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+G2L["10a"]["Text"] = [[Info]];
+G2L["10a"]["Name"] = [[info]];
+G2L["10a"]["Position"] = UDim2.new(0.10155, 7, 0, 2);
+
+
+-- StarterGui.projectglock.top.Gui.info.LocalScript
+G2L["10b"] = Instance.new("LocalScript", G2L["10a"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.info.Script
+G2L["10c"] = Instance.new("Script", G2L["10a"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.Info
+G2L["10d"] = Instance.new("Frame", G2L["e"]);
+G2L["10d"]["Visible"] = false;
+G2L["10d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10d"]["Size"] = UDim2.new(0, 627, 0, 340);
+G2L["10d"]["Position"] = UDim2.new(0.00932, 0, 0.0672, 0);
+G2L["10d"]["BorderColor3"] = Color3.fromRGB(195, 195, 195);
+G2L["10d"]["Name"] = [[Info]];
+
+
+-- StarterGui.projectglock.top.Gui.Info.LocalScript
+G2L["10e"] = Instance.new("LocalScript", G2L["10d"]);
+
 
 
 -- StarterGui.projectglock.top.Gui.Info.TextLabel
-G2L["102"] = Instance.new("TextLabel", G2L["f8"]);
-G2L["102"]["TextWrapped"] = true;
-G2L["102"]["BorderSizePixel"] = 0;
-G2L["102"]["TextSize"] = 20;
-G2L["102"]["TextScaled"] = true;
-G2L["102"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["102"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["102"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
-G2L["102"]["BackgroundTransparency"] = 1;
-G2L["102"]["Size"] = UDim2.new(0, 211, 0, 45);
-G2L["102"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["102"]["Text"] = [[The game you are in is]];
-G2L["102"]["Position"] = UDim2.new(0.66276, 0, 0.35092, 0);
+G2L["10f"] = Instance.new("TextLabel", G2L["10d"]);
+G2L["10f"]["TextWrapped"] = true;
+G2L["10f"]["BorderSizePixel"] = 0;
+G2L["10f"]["TextSize"] = 20;
+G2L["10f"]["TextScaled"] = true;
+G2L["10f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10f"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["10f"]["BackgroundTransparency"] = 1;
+G2L["10f"]["Size"] = UDim2.new(0, 254, 0, 60);
+G2L["10f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10f"]["Text"] = [[USER]];
+G2L["10f"]["Position"] = UDim2.new(0.30072, 0, 0.17235, 0);
+
+
+-- StarterGui.projectglock.top.Gui.Info.TextLabel.LocalScript
+G2L["110"] = Instance.new("LocalScript", G2L["10f"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.Info.Time
+G2L["111"] = Instance.new("TextLabel", G2L["10d"]);
+G2L["111"]["TextWrapped"] = true;
+G2L["111"]["TextSize"] = 14;
+G2L["111"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["111"]["TextScaled"] = true;
+G2L["111"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["111"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["111"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["111"]["BackgroundTransparency"] = 1;
+G2L["111"]["Size"] = UDim2.new(0, 120, 0, 26);
+G2L["111"]["Text"] = [[Time: 15:42]];
+G2L["111"]["Name"] = [[Time]];
+G2L["111"]["Position"] = UDim2.new(0.07031, 0, 0.48405, 0);
+
+
+-- StarterGui.projectglock.top.Gui.Info.Time.LocalScript
+G2L["112"] = Instance.new("LocalScript", G2L["111"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.Info.placeid
+G2L["113"] = Instance.new("TextLabel", G2L["10d"]);
+G2L["113"]["TextWrapped"] = true;
+G2L["113"]["BorderSizePixel"] = 0;
+G2L["113"]["TextSize"] = 18;
+G2L["113"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["113"]["TextScaled"] = true;
+G2L["113"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["113"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["113"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["113"]["BackgroundTransparency"] = 1;
+G2L["113"]["Size"] = UDim2.new(0, 210, 0, 43);
+G2L["113"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["113"]["Text"] = [[Place ID: 79708510013562 (dont ban me roblix)]];
+G2L["113"]["Name"] = [[placeid]];
+G2L["113"]["Position"] = UDim2.new(0.66276, 0, 0.46023, 0);
+
+
+-- StarterGui.projectglock.top.Gui.Info.placeid.Script
+G2L["114"] = Instance.new("Script", G2L["113"]);
+
+
+
+-- StarterGui.projectglock.top.Gui.Info.TextLabel
+G2L["115"] = Instance.new("TextLabel", G2L["10d"]);
+G2L["115"]["TextWrapped"] = true;
+G2L["115"]["BorderSizePixel"] = 0;
+G2L["115"]["TextSize"] = 20;
+G2L["115"]["TextScaled"] = true;
+G2L["115"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["115"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["115"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["115"]["BackgroundTransparency"] = 1;
+G2L["115"]["Size"] = UDim2.new(0, 254, 0, 60);
+G2L["115"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["115"]["Text"] = [[Your username is]];
+G2L["115"]["Position"] = UDim2.new(0.29594, 0, -0.00027, 0);
+
+
+-- StarterGui.projectglock.top.Gui.Info.TextLabel
+G2L["116"] = Instance.new("TextLabel", G2L["10d"]);
+G2L["116"]["TextWrapped"] = true;
+G2L["116"]["BorderSizePixel"] = 0;
+G2L["116"]["TextSize"] = 20;
+G2L["116"]["TextScaled"] = true;
+G2L["116"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["116"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["116"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["116"]["BackgroundTransparency"] = 1;
+G2L["116"]["Size"] = UDim2.new(0, 211, 0, 45);
+G2L["116"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["116"]["Text"] = [[The time for you is]];
+G2L["116"]["Position"] = UDim2.new(-0.00071, 0, 0.35092, 0);
+
+
+-- StarterGui.projectglock.top.Gui.Info.TextLabel
+G2L["117"] = Instance.new("TextLabel", G2L["10d"]);
+G2L["117"]["TextWrapped"] = true;
+G2L["117"]["BorderSizePixel"] = 0;
+G2L["117"]["TextSize"] = 20;
+G2L["117"]["TextScaled"] = true;
+G2L["117"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["117"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["117"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["117"]["BackgroundTransparency"] = 1;
+G2L["117"]["Size"] = UDim2.new(0, 211, 0, 45);
+G2L["117"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["117"]["Text"] = [[The game you are in is]];
+G2L["117"]["Position"] = UDim2.new(0.66276, 0, 0.35092, 0);
 
 
 -- StarterGui.projectglock.top.Gui.Info.ImageLabel
-G2L["103"] = Instance.new("ImageLabel", G2L["f8"]);
-G2L["103"]["BorderSizePixel"] = 0;
-G2L["103"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["103"]["ImageColor3"] = Color3.fromRGB(9, 9, 9);
-G2L["103"]["Image"] = [[rbxassetid://105540078]];
-G2L["103"]["Size"] = UDim2.new(0, 102, 0, 124);
-G2L["103"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["103"]["BackgroundTransparency"] = 1;
-G2L["103"]["Position"] = UDim2.new(0.4179, 0, 0.34921, 0);
-
-
--- StarterGui.projectglock.top.Gui.Info.ImageLabel.LocalScript
-G2L["104"] = Instance.new("LocalScript", G2L["103"]);
-
-
-
--- StarterGui.projectglock.top.Gui.Info.StatsLabel
-G2L["105"] = Instance.new("TextLabel", G2L["f8"]);
-G2L["105"]["TextWrapped"] = true;
-G2L["105"]["BorderSizePixel"] = 0;
-G2L["105"]["TextSize"] = 20;
-G2L["105"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["105"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["105"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["105"]["BackgroundTransparency"] = 1;
-G2L["105"]["RichText"] = true;
-G2L["105"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["105"]["Size"] = UDim2.new(0, 200, 0, 50);
-G2L["105"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["105"]["Text"] = [[FPS: 0 | PING: 0ms]];
-G2L["105"]["Name"] = [[StatsLabel]];
-G2L["105"]["Position"] = UDim2.new(0, 409, 0, 273);
-
-
--- StarterGui.projectglock.top.Gui.Info.TextLabel
-G2L["106"] = Instance.new("TextLabel", G2L["f8"]);
-G2L["106"]["TextWrapped"] = true;
-G2L["106"]["BorderSizePixel"] = 0;
-G2L["106"]["TextSize"] = 20;
-G2L["106"]["TextScaled"] = true;
-G2L["106"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["106"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["106"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
-G2L["106"]["BackgroundTransparency"] = 1;
-G2L["106"]["Size"] = UDim2.new(0, 254, 0, 60);
-G2L["106"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["106"]["Text"] = [[Your ping & FPS is]];
-G2L["106"]["Position"] = UDim2.new(0.30072, 0, 0.71699, 0);
-
-
--- StarterGui.projectglock.top.Gui.Info.TextLabel
-G2L["107"] = Instance.new("TextLabel", G2L["f8"]);
-G2L["107"]["TextWrapped"] = true;
-G2L["107"]["BorderSizePixel"] = 0;
-G2L["107"]["TextSize"] = 20;
-G2L["107"]["TextScaled"] = true;
-G2L["107"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["107"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["107"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
-G2L["107"]["BackgroundTransparency"] = 1;
-G2L["107"]["Size"] = UDim2.new(0, 74, 0, 33);
-G2L["107"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["107"]["Text"] = [[GUI Verison]];
-G2L["107"]["Position"] = UDim2.new(0.01045, 0, 0.81223, 0);
-
-
--- StarterGui.projectglock.top.Gui.Info.TextLabel
-G2L["108"] = Instance.new("TextLabel", G2L["f8"]);
-G2L["108"]["TextWrapped"] = true;
-G2L["108"]["BorderSizePixel"] = 0;
-G2L["108"]["TextSize"] = 20;
-G2L["108"]["TextScaled"] = true;
-G2L["108"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["108"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["108"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
-G2L["108"]["BackgroundTransparency"] = 1;
-G2L["108"]["Size"] = UDim2.new(0, 40, 0, 28);
-G2L["108"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["108"]["Text"] = [[v1]];
-G2L["108"]["Position"] = UDim2.new(0.03987, 0, 0.91044, 0);
-
-
--- StarterGui.projectglock.top.Gui.Info.TextLabel
-G2L["109"] = Instance.new("TextLabel", G2L["f8"]);
-G2L["109"]["TextWrapped"] = true;
-G2L["109"]["BorderSizePixel"] = 0;
-G2L["109"]["TextSize"] = 20;
-G2L["109"]["TextScaled"] = true;
-G2L["109"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["109"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["109"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
-G2L["109"]["BackgroundTransparency"] = 1;
-G2L["109"]["Size"] = UDim2.new(0, 74, 0, 33);
-G2L["109"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["109"]["Text"] = [[GUI Model]];
-G2L["109"]["Position"] = UDim2.new(0.89881, 0, 0.81223, 0);
-
-
--- StarterGui.projectglock.top.Gui.Info.TextLabel
-G2L["10a"] = Instance.new("TextLabel", G2L["f8"]);
-G2L["10a"]["TextWrapped"] = true;
-G2L["10a"]["BorderSizePixel"] = 0;
-G2L["10a"]["TextSize"] = 20;
-G2L["10a"]["TextScaled"] = true;
-G2L["10a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["10a"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
-G2L["10a"]["BackgroundTransparency"] = 1;
-G2L["10a"]["Size"] = UDim2.new(0, 40, 0, 28);
-G2L["10a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10a"]["Text"] = [[Private]];
-G2L["10a"]["Position"] = UDim2.new(0.92504, 0, 0.91044, 0);
-
-
--- StarterGui.projectglock.ImageLabel
-G2L["10b"] = Instance.new("ImageLabel", G2L["1"]);
-G2L["10b"]["BorderSizePixel"] = 0;
-G2L["10b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10b"]["ImageColor3"] = Color3.fromRGB(3, 3, 3);
-G2L["10b"]["Image"] = [[rbxassetid://105540078]];
-G2L["10b"]["Size"] = UDim2.new(0, 74, 0, 71);
-G2L["10b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10b"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.projectglock.TextLabel
-G2L["10c"] = Instance.new("TextLabel", G2L["1"]);
-G2L["10c"]["TextWrapped"] = true;
-G2L["10c"]["BorderSizePixel"] = 0;
-G2L["10c"]["TextSize"] = 14;
-G2L["10c"]["TextScaled"] = true;
-G2L["10c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["10c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10c"]["BackgroundTransparency"] = 1;
-G2L["10c"]["Size"] = UDim2.new(0, 133, 0, 39);
-G2L["10c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10c"]["Text"] = [[Project Glock]];
-G2L["10c"]["Position"] = UDim2.new(0, 0, 0.09021, 0);
-
-
--- StarterGui.projectglock.notfication
-G2L["10d"] = Instance.new("LocalScript", G2L["1"]);
-G2L["10d"]["Name"] = [[notfication]];
-
-
--- StarterGui.projectglock.whitelist script
-G2L["10e"] = Instance.new("LocalScript", G2L["1"]);
-G2L["10e"]["Name"] = [[whitelist script]];
-
-
--- StarterGui.projectglock.whitelist
-G2L["10f"] = Instance.new("Frame", G2L["1"]);
-G2L["10f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10f"]["Size"] = UDim2.new(0, 644, 0, 174);
-G2L["10f"]["Position"] = UDim2.new(0.09832, 0, 0.32841, 0);
-G2L["10f"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
-G2L["10f"]["Name"] = [[whitelist]];
-
-
--- StarterGui.projectglock.whitelist.Drag
-G2L["110"] = Instance.new("LocalScript", G2L["10f"]);
-G2L["110"]["Name"] = [[Drag]];
-
-
--- StarterGui.projectglock.whitelist.ImageLabel
-G2L["111"] = Instance.new("ImageLabel", G2L["10f"]);
-G2L["111"]["BorderSizePixel"] = 0;
-G2L["111"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["111"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["111"]["Image"] = [[rbxassetid://105540078]];
-G2L["111"]["Size"] = UDim2.new(0, 25, 0, 23);
-G2L["111"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["111"]["BackgroundTransparency"] = 1;
-G2L["111"]["Position"] = UDim2.new(0, 0, -0.00504, 0);
-
-
--- StarterGui.projectglock.whitelist.TextLabel
-G2L["112"] = Instance.new("TextLabel", G2L["10f"]);
-G2L["112"]["BorderSizePixel"] = 0;
-G2L["112"]["TextSize"] = 14;
-G2L["112"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["112"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["112"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["112"]["BackgroundTransparency"] = 1;
-G2L["112"]["Size"] = UDim2.new(0, 114, 0, 22);
-G2L["112"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["112"]["Text"] = [[Project Glock]];
-G2L["112"]["Position"] = UDim2.new(0.02174, 0, 0.01119, 0);
-
-
--- StarterGui.projectglock.whitelist.close
-G2L["113"] = Instance.new("ImageButton", G2L["10f"]);
-G2L["113"]["BorderSizePixel"] = 0;
-G2L["113"]["BackgroundTransparency"] = 1;
-G2L["113"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["113"]["ImageColor3"] = Color3.fromRGB(113, 113, 113);
-G2L["113"]["Image"] = [[rbxassetid://274958830]];
-G2L["113"]["Size"] = UDim2.new(0, 12, 0, 12);
-G2L["113"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["113"]["Name"] = [[close]];
-G2L["113"]["Position"] = UDim2.new(0.95313, 0, 0.03687, 0);
-
-
--- StarterGui.projectglock.whitelist.close.LocalScript
-G2L["114"] = Instance.new("LocalScript", G2L["113"]);
-
-
-
--- StarterGui.projectglock.whitelist.max
-G2L["115"] = Instance.new("ImageButton", G2L["10f"]);
-G2L["115"]["BorderSizePixel"] = 0;
-G2L["115"]["ImageTransparency"] = 0.6;
-G2L["115"]["BackgroundTransparency"] = 1;
-G2L["115"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["115"]["ImageColor3"] = Color3.fromRGB(113, 113, 113);
-G2L["115"]["Image"] = [[rbxassetid://14953690282]];
-G2L["115"]["Size"] = UDim2.new(0, 12, 0, 12);
-G2L["115"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["115"]["Name"] = [[max]];
-G2L["115"]["Position"] = UDim2.new(0.88668, 0, 0.03687, 0);
-
-
--- StarterGui.projectglock.whitelist.min
-G2L["116"] = Instance.new("ImageButton", G2L["10f"]);
-G2L["116"]["BorderSizePixel"] = 0;
-G2L["116"]["BackgroundTransparency"] = 1;
-G2L["116"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["116"]["ImageColor3"] = Color3.fromRGB(113, 113, 113);
-G2L["116"]["Image"] = [[rbxassetid://14953689987]];
-G2L["116"]["Size"] = UDim2.new(0, 12, 0, 12);
-G2L["116"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["116"]["Name"] = [[min]];
-G2L["116"]["Position"] = UDim2.new(0.82413, 0, 0.03667, 0);
-
-
--- StarterGui.projectglock.whitelist.min.LocalScript
-G2L["117"] = Instance.new("LocalScript", G2L["116"]);
-
-
-
--- StarterGui.projectglock.whitelist.ImageLabel
-G2L["118"] = Instance.new("ImageLabel", G2L["10f"]);
+G2L["118"] = Instance.new("ImageLabel", G2L["10d"]);
 G2L["118"]["BorderSizePixel"] = 0;
 G2L["118"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["118"]["ImageColor3"] = Color3.fromRGB(9, 9, 9);
 G2L["118"]["Image"] = [[rbxassetid://105540078]];
-G2L["118"]["Size"] = UDim2.new(0, 58, 0, 68);
+G2L["118"]["Size"] = UDim2.new(0, 102, 0, 124);
 G2L["118"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["118"]["BackgroundTransparency"] = 1;
-G2L["118"]["Position"] = UDim2.new(0.05148, 0, 0.41643, 0);
+G2L["118"]["Position"] = UDim2.new(0.4179, 0, 0.34921, 0);
 
 
--- StarterGui.projectglock.whitelist.ImageLabel.LocalScript
+-- StarterGui.projectglock.top.Gui.Info.ImageLabel.LocalScript
 G2L["119"] = Instance.new("LocalScript", G2L["118"]);
 
 
 
--- StarterGui.projectglock.whitelist.ImageLabel
-G2L["11a"] = Instance.new("ImageLabel", G2L["10f"]);
+-- StarterGui.projectglock.top.Gui.Info.StatsLabel
+G2L["11a"] = Instance.new("TextLabel", G2L["10d"]);
+G2L["11a"]["TextWrapped"] = true;
 G2L["11a"]["BorderSizePixel"] = 0;
+G2L["11a"]["TextSize"] = 20;
 G2L["11a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11a"]["ImageColor3"] = Color3.fromRGB(9, 9, 9);
-G2L["11a"]["Image"] = [[rbxassetid://105540078]];
-G2L["11a"]["Size"] = UDim2.new(0, 58, 0, 68);
-G2L["11a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["11a"]["BackgroundTransparency"] = 1;
-G2L["11a"]["Position"] = UDim2.new(0.86204, 0, 0.41643, 0);
+G2L["11a"]["RichText"] = true;
+G2L["11a"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["11a"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["11a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11a"]["Text"] = [[FPS: 0 | PING: 0ms]];
+G2L["11a"]["Name"] = [[StatsLabel]];
+G2L["11a"]["Position"] = UDim2.new(0, 409, 0, 273);
 
 
--- StarterGui.projectglock.whitelist.ImageLabel.LocalScript
-G2L["11b"] = Instance.new("LocalScript", G2L["11a"]);
+-- StarterGui.projectglock.top.Gui.Info.TextLabel
+G2L["11b"] = Instance.new("TextLabel", G2L["10d"]);
+G2L["11b"]["TextWrapped"] = true;
+G2L["11b"]["BorderSizePixel"] = 0;
+G2L["11b"]["TextSize"] = 20;
+G2L["11b"]["TextScaled"] = true;
+G2L["11b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11b"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["11b"]["BackgroundTransparency"] = 1;
+G2L["11b"]["Size"] = UDim2.new(0, 254, 0, 60);
+G2L["11b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11b"]["Text"] = [[Your ping & FPS is]];
+G2L["11b"]["Position"] = UDim2.new(0.30072, 0, 0.71699, 0);
 
 
-
--- StarterGui.projectglock.whitelist.TextLabel
-G2L["11c"] = Instance.new("TextLabel", G2L["10f"]);
+-- StarterGui.projectglock.top.Gui.Info.TextLabel
+G2L["11c"] = Instance.new("TextLabel", G2L["10d"]);
 G2L["11c"]["TextWrapped"] = true;
 G2L["11c"]["BorderSizePixel"] = 0;
 G2L["11c"]["TextSize"] = 20;
+G2L["11c"]["TextScaled"] = true;
 G2L["11c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["11c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["11c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11c"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["11c"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["11c"]["BackgroundTransparency"] = 1;
+G2L["11c"]["Size"] = UDim2.new(0, 74, 0, 33);
 G2L["11c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11c"]["Text"] = [[Could not find a whitelist for the user]];
-G2L["11c"]["Position"] = UDim2.new(0.34472, 0, 0.22989, 0);
+G2L["11c"]["Text"] = [[GUI Verison]];
+G2L["11c"]["Position"] = UDim2.new(0.01045, 0, 0.81223, 0);
 
 
--- StarterGui.projectglock.whitelist.TextLabel
-G2L["11d"] = Instance.new("TextLabel", G2L["10f"]);
+-- StarterGui.projectglock.top.Gui.Info.TextLabel
+G2L["11d"] = Instance.new("TextLabel", G2L["10d"]);
 G2L["11d"]["TextWrapped"] = true;
 G2L["11d"]["BorderSizePixel"] = 0;
 G2L["11d"]["TextSize"] = 20;
+G2L["11d"]["TextScaled"] = true;
 G2L["11d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["11d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["11d"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
 G2L["11d"]["BackgroundTransparency"] = 1;
-G2L["11d"]["Size"] = UDim2.new(0, 254, 0, 25);
+G2L["11d"]["Size"] = UDim2.new(0, 40, 0, 28);
 G2L["11d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11d"]["Text"] = [[USER]];
-G2L["11d"]["Position"] = UDim2.new(0.30228, 0, 0.51143, 0);
+G2L["11d"]["Text"] = [[v1]];
+G2L["11d"]["Position"] = UDim2.new(0.03987, 0, 0.91044, 0);
 
 
--- StarterGui.projectglock.whitelist.TextLabel.LocalScript
-G2L["11e"] = Instance.new("LocalScript", G2L["11d"]);
+-- StarterGui.projectglock.top.Gui.Info.TextLabel
+G2L["11e"] = Instance.new("TextLabel", G2L["10d"]);
+G2L["11e"]["TextWrapped"] = true;
+G2L["11e"]["BorderSizePixel"] = 0;
+G2L["11e"]["TextSize"] = 20;
+G2L["11e"]["TextScaled"] = true;
+G2L["11e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11e"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["11e"]["BackgroundTransparency"] = 1;
+G2L["11e"]["Size"] = UDim2.new(0, 74, 0, 33);
+G2L["11e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11e"]["Text"] = [[GUI Model]];
+G2L["11e"]["Position"] = UDim2.new(0.89881, 0, 0.81223, 0);
 
 
-
--- StarterGui.projectglock.whitelist.TextLabel
-G2L["11f"] = Instance.new("TextLabel", G2L["10f"]);
+-- StarterGui.projectglock.top.Gui.Info.TextLabel
+G2L["11f"] = Instance.new("TextLabel", G2L["10d"]);
 G2L["11f"]["TextWrapped"] = true;
 G2L["11f"]["BorderSizePixel"] = 0;
 G2L["11f"]["TextSize"] = 20;
 G2L["11f"]["TextScaled"] = true;
 G2L["11f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["11f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["11f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11f"]["Size"] = UDim2.new(0, 381, 0, 20);
+G2L["11f"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["11f"]["BackgroundTransparency"] = 1;
+G2L["11f"]["Size"] = UDim2.new(0, 40, 0, 28);
 G2L["11f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11f"]["Text"] = [[Want a whitelist? Get a whitelist in the discord!]];
-G2L["11f"]["Position"] = UDim2.new(0.19876, 0, 0.65517, 0);
+G2L["11f"]["Text"] = [[Private]];
+G2L["11f"]["Position"] = UDim2.new(0.92504, 0, 0.91044, 0);
+
+
+-- StarterGui.projectglock.ImageLabel
+G2L["120"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["120"]["BorderSizePixel"] = 0;
+G2L["120"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["120"]["ImageColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["120"]["Image"] = [[rbxassetid://105540078]];
+G2L["120"]["Size"] = UDim2.new(0, 74, 0, 71);
+G2L["120"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["120"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.projectglock.TextLabel
+G2L["121"] = Instance.new("TextLabel", G2L["1"]);
+G2L["121"]["TextWrapped"] = true;
+G2L["121"]["BorderSizePixel"] = 0;
+G2L["121"]["TextSize"] = 14;
+G2L["121"]["TextScaled"] = true;
+G2L["121"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["121"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["121"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["121"]["BackgroundTransparency"] = 1;
+G2L["121"]["Size"] = UDim2.new(0, 133, 0, 39);
+G2L["121"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["121"]["Text"] = [[Project Glock]];
+G2L["121"]["Position"] = UDim2.new(0, 0, 0.09021, 0);
+
+
+-- StarterGui.projectglock.notfication
+G2L["122"] = Instance.new("LocalScript", G2L["1"]);
+G2L["122"]["Name"] = [[notfication]];
+
+
+-- StarterGui.projectglock.whitelist script
+G2L["123"] = Instance.new("LocalScript", G2L["1"]);
+G2L["123"]["Name"] = [[whitelist script]];
+
+
+-- StarterGui.projectglock.whitelist
+G2L["124"] = Instance.new("Frame", G2L["1"]);
+G2L["124"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["124"]["Size"] = UDim2.new(0, 644, 0, 174);
+G2L["124"]["Position"] = UDim2.new(0.09832, 0, 0.32841, 0);
+G2L["124"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+G2L["124"]["Name"] = [[whitelist]];
+
+
+-- StarterGui.projectglock.whitelist.Drag
+G2L["125"] = Instance.new("LocalScript", G2L["124"]);
+G2L["125"]["Name"] = [[Drag]];
+
+
+-- StarterGui.projectglock.whitelist.ImageLabel
+G2L["126"] = Instance.new("ImageLabel", G2L["124"]);
+G2L["126"]["BorderSizePixel"] = 0;
+G2L["126"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["126"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["126"]["Image"] = [[rbxassetid://105540078]];
+G2L["126"]["Size"] = UDim2.new(0, 25, 0, 23);
+G2L["126"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["126"]["BackgroundTransparency"] = 1;
+G2L["126"]["Position"] = UDim2.new(0, 0, -0.00504, 0);
 
 
 -- StarterGui.projectglock.whitelist.TextLabel
-G2L["120"] = Instance.new("TextLabel", G2L["10f"]);
-G2L["120"]["TextWrapped"] = true;
-G2L["120"]["BorderSizePixel"] = 0;
-G2L["120"]["TextSize"] = 20;
-G2L["120"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["120"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["120"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["120"]["Size"] = UDim2.new(0, 200, 0, 20);
-G2L["120"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["120"]["Text"] = [[.gg/FMS68R4jhZ]];
-G2L["120"]["Position"] = UDim2.new(0.34317, 0, 0.8046, 0);
+G2L["127"] = Instance.new("TextLabel", G2L["124"]);
+G2L["127"]["BorderSizePixel"] = 0;
+G2L["127"]["TextSize"] = 14;
+G2L["127"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["127"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["127"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["127"]["BackgroundTransparency"] = 1;
+G2L["127"]["Size"] = UDim2.new(0, 114, 0, 22);
+G2L["127"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["127"]["Text"] = [[Project Glock]];
+G2L["127"]["Position"] = UDim2.new(0.02174, 0, 0.01119, 0);
+
+
+-- StarterGui.projectglock.whitelist.close
+G2L["128"] = Instance.new("ImageButton", G2L["124"]);
+G2L["128"]["BorderSizePixel"] = 0;
+G2L["128"]["BackgroundTransparency"] = 1;
+G2L["128"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["128"]["ImageColor3"] = Color3.fromRGB(113, 113, 113);
+G2L["128"]["Image"] = [[rbxassetid://274958830]];
+G2L["128"]["Size"] = UDim2.new(0, 12, 0, 12);
+G2L["128"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["128"]["Name"] = [[close]];
+G2L["128"]["Position"] = UDim2.new(0.95313, 0, 0.03687, 0);
+
+
+-- StarterGui.projectglock.whitelist.close.LocalScript
+G2L["129"] = Instance.new("LocalScript", G2L["128"]);
+
+
+
+-- StarterGui.projectglock.whitelist.max
+G2L["12a"] = Instance.new("ImageButton", G2L["124"]);
+G2L["12a"]["BorderSizePixel"] = 0;
+G2L["12a"]["ImageTransparency"] = 0.6;
+G2L["12a"]["BackgroundTransparency"] = 1;
+G2L["12a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12a"]["ImageColor3"] = Color3.fromRGB(113, 113, 113);
+G2L["12a"]["Image"] = [[rbxassetid://14953690282]];
+G2L["12a"]["Size"] = UDim2.new(0, 12, 0, 12);
+G2L["12a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12a"]["Name"] = [[max]];
+G2L["12a"]["Position"] = UDim2.new(0.88668, 0, 0.03687, 0);
+
+
+-- StarterGui.projectglock.whitelist.min
+G2L["12b"] = Instance.new("ImageButton", G2L["124"]);
+G2L["12b"]["BorderSizePixel"] = 0;
+G2L["12b"]["BackgroundTransparency"] = 1;
+G2L["12b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12b"]["ImageColor3"] = Color3.fromRGB(113, 113, 113);
+G2L["12b"]["Image"] = [[rbxassetid://14953689987]];
+G2L["12b"]["Size"] = UDim2.new(0, 12, 0, 12);
+G2L["12b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12b"]["Name"] = [[min]];
+G2L["12b"]["Position"] = UDim2.new(0.82413, 0, 0.03667, 0);
+
+
+-- StarterGui.projectglock.whitelist.min.LocalScript
+G2L["12c"] = Instance.new("LocalScript", G2L["12b"]);
+
+
+
+-- StarterGui.projectglock.whitelist.ImageLabel
+G2L["12d"] = Instance.new("ImageLabel", G2L["124"]);
+G2L["12d"]["BorderSizePixel"] = 0;
+G2L["12d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12d"]["ImageColor3"] = Color3.fromRGB(9, 9, 9);
+G2L["12d"]["Image"] = [[rbxassetid://105540078]];
+G2L["12d"]["Size"] = UDim2.new(0, 58, 0, 68);
+G2L["12d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12d"]["BackgroundTransparency"] = 1;
+G2L["12d"]["Position"] = UDim2.new(0.05148, 0, 0.41643, 0);
+
+
+-- StarterGui.projectglock.whitelist.ImageLabel.LocalScript
+G2L["12e"] = Instance.new("LocalScript", G2L["12d"]);
+
+
+
+-- StarterGui.projectglock.whitelist.ImageLabel
+G2L["12f"] = Instance.new("ImageLabel", G2L["124"]);
+G2L["12f"]["BorderSizePixel"] = 0;
+G2L["12f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12f"]["ImageColor3"] = Color3.fromRGB(9, 9, 9);
+G2L["12f"]["Image"] = [[rbxassetid://105540078]];
+G2L["12f"]["Size"] = UDim2.new(0, 58, 0, 68);
+G2L["12f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12f"]["BackgroundTransparency"] = 1;
+G2L["12f"]["Position"] = UDim2.new(0.86204, 0, 0.41643, 0);
+
+
+-- StarterGui.projectglock.whitelist.ImageLabel.LocalScript
+G2L["130"] = Instance.new("LocalScript", G2L["12f"]);
+
+
+
+-- StarterGui.projectglock.whitelist.TextLabel
+G2L["131"] = Instance.new("TextLabel", G2L["124"]);
+G2L["131"]["TextWrapped"] = true;
+G2L["131"]["BorderSizePixel"] = 0;
+G2L["131"]["TextSize"] = 20;
+G2L["131"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["131"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["131"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["131"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["131"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["131"]["Text"] = [[Could not find a whitelist for the user]];
+G2L["131"]["Position"] = UDim2.new(0.34472, 0, 0.22989, 0);
+
+
+-- StarterGui.projectglock.whitelist.TextLabel
+G2L["132"] = Instance.new("TextLabel", G2L["124"]);
+G2L["132"]["TextWrapped"] = true;
+G2L["132"]["BorderSizePixel"] = 0;
+G2L["132"]["TextSize"] = 20;
+G2L["132"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["132"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["132"]["TextColor3"] = Color3.fromRGB(3, 3, 3);
+G2L["132"]["BackgroundTransparency"] = 1;
+G2L["132"]["Size"] = UDim2.new(0, 254, 0, 25);
+G2L["132"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["132"]["Text"] = [[USER]];
+G2L["132"]["Position"] = UDim2.new(0.30228, 0, 0.51143, 0);
+
+
+-- StarterGui.projectglock.whitelist.TextLabel.LocalScript
+G2L["133"] = Instance.new("LocalScript", G2L["132"]);
+
+
+
+-- StarterGui.projectglock.whitelist.TextLabel
+G2L["134"] = Instance.new("TextLabel", G2L["124"]);
+G2L["134"]["TextWrapped"] = true;
+G2L["134"]["BorderSizePixel"] = 0;
+G2L["134"]["TextSize"] = 20;
+G2L["134"]["TextScaled"] = true;
+G2L["134"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["134"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["134"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["134"]["Size"] = UDim2.new(0, 381, 0, 20);
+G2L["134"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["134"]["Text"] = [[Want a whitelist? Get a whitelist in the discord!]];
+G2L["134"]["Position"] = UDim2.new(0.19876, 0, 0.65517, 0);
+
+
+-- StarterGui.projectglock.whitelist.TextLabel
+G2L["135"] = Instance.new("TextLabel", G2L["124"]);
+G2L["135"]["TextWrapped"] = true;
+G2L["135"]["BorderSizePixel"] = 0;
+G2L["135"]["TextSize"] = 20;
+G2L["135"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["135"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["135"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["135"]["Size"] = UDim2.new(0, 200, 0, 20);
+G2L["135"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["135"]["Text"] = [[.gg/FMS68R4jhZ]];
+G2L["135"]["Position"] = UDim2.new(0.34317, 0, 0.8046, 0);
 
 
 -- StarterGui.projectglock.notfication
@@ -3518,18 +3679,95 @@ local script = G2L["d7"];
 	end)
 end;
 task.spawn(C_d7);
--- StarterGui.projectglock.top.Gui.panel.ImageLabel.LocalScript
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+local function C_da()
+local script = G2L["da"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+	
+		script.Parent.Parent.Parent.CodeInput.Text = 'require(8686293780).A10("' .. player.Name .. '")'
+	end)
+end;
+task.spawn(C_da);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+local function C_dd()
+local script = G2L["dd"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+	
+		script.Parent.Parent.Parent.CodeInput.Text = 'require(5475123749).VNDneko("' .. player.Name .. '")'
+	end)
+end;
+task.spawn(C_dd);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
 local function C_e0()
 local script = G2L["e0"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+	
+		script.Parent.Parent.Parent.CodeInput.Text = 'require(7109550607).load("' .. player.Name .. '")'
+	end)
+end;
+task.spawn(C_e0);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+local function C_e3()
+local script = G2L["e3"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+	
+		script.Parent.Parent.Parent.CodeInput.Text = 'require(9978015219).filteringdisabled("' .. player.Name .. '")'
+	end)
+end;
+task.spawn(C_e3);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+local function C_e6()
+local script = G2L["e6"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+	
+		script.Parent.Parent.Parent.CodeInput.Text = 'require(6707668066).virus("' .. player.Name .. '")'
+	end)
+end;
+task.spawn(C_e6);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+local function C_e9()
+local script = G2L["e9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+	
+		script.Parent.Parent.Parent.CodeInput.Text = 'require(6716117870)("' .. player.Name .. '")'
+	end)
+end;
+task.spawn(C_e9);
+-- StarterGui.projectglock.top.Gui.drag.ScrollingFrame.TextButton.LocalScript
+local function C_ec()
+local script = G2L["ec"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+	
+		script.Parent.Parent.Parent.CodeInput.Text = 'require(11172873454).RMIA("' .. player.Name .. '")'
+	end)
+end;
+task.spawn(C_ec);
+-- StarterGui.projectglock.top.Gui.panel.ImageLabel.LocalScript
+local function C_f5()
+local script = G2L["f5"];
 	while wait () do
 		script.Parent.Rotation = script.Parent.Rotation + 0.99
 	end
 	
 end;
-task.spawn(C_e0);
+task.spawn(C_f5);
 -- StarterGui.projectglock.top.Gui.panel.TextLabel.LocalScript
-local function C_ed()
-local script = G2L["ed"];
+local function C_102()
+local script = G2L["102"];
 	-- user whitelist user tag
 	local text = script.Parent
 	local player = game.Players.LocalPlayer
@@ -3537,30 +3775,30 @@ local script = G2L["ed"];
 	text.Text = player.Name
 	
 end;
-task.spawn(C_ed);
+task.spawn(C_102);
 -- StarterGui.projectglock.top.Gui.ex.LocalScript
-local function C_f0()
-local script = G2L["f0"];
+local function C_105()
+local script = G2L["105"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.drag.Visible = true
 		script.Parent.Parent.panel.Visible = false
 		script.Parent.Parent.Info.Visible = false
 	end)
 end;
-task.spawn(C_f0);
+task.spawn(C_105);
 -- StarterGui.projectglock.top.Gui.panelz.LocalScript
-local function C_f3()
-local script = G2L["f3"];
+local function C_108()
+local script = G2L["108"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.drag.Visible = false
 		script.Parent.Parent.panel.Visible = true
 		script.Parent.Parent.Info.Visible = false
 	end)
 end;
-task.spawn(C_f3);
+task.spawn(C_108);
 -- StarterGui.projectglock.top.Gui.info.LocalScript
-local function C_f6()
-local script = G2L["f6"];
+local function C_10b()
+local script = G2L["10b"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.drag.Visible = false
 		script.Parent.Parent.panel.Visible = false
@@ -3568,10 +3806,10 @@ local script = G2L["f6"];
 	
 	end)
 end;
-task.spawn(C_f6);
+task.spawn(C_10b);
 -- StarterGui.projectglock.top.Gui.Info.LocalScript
-local function C_f9()
-local script = G2L["f9"];
+local function C_10e()
+local script = G2L["10e"];
 	local statsLabel = script.Parent:WaitForChild("StatsLabel")
 	local runService = game:GetService("RunService")
 	local heartbeat = runService.Heartbeat
@@ -3594,10 +3832,10 @@ local script = G2L["f9"];
 		statsLabel.Text = "FPS: "..fps.." | PING: "..ping.."ms"
 	end)
 end;
-task.spawn(C_f9);
+task.spawn(C_10e);
 -- StarterGui.projectglock.top.Gui.Info.TextLabel.LocalScript
-local function C_fb()
-local script = G2L["fb"];
+local function C_110()
+local script = G2L["110"];
 	-- user whitelist user tag
 	local text = script.Parent
 	local player = game.Players.LocalPlayer
@@ -3605,10 +3843,10 @@ local script = G2L["fb"];
 	text.Text = player.Name
 	
 end;
-task.spawn(C_fb);
+task.spawn(C_110);
 -- StarterGui.projectglock.top.Gui.Info.Time.LocalScript
-local function C_fd()
-local script = G2L["fd"];
+local function C_112()
+local script = G2L["112"];
 	local textLabel = script.Parent
 	
 	
@@ -3629,19 +3867,19 @@ local script = G2L["fd"];
 	updateRealTime()
 	
 end;
-task.spawn(C_fd);
+task.spawn(C_112);
 -- StarterGui.projectglock.top.Gui.Info.ImageLabel.LocalScript
-local function C_104()
-local script = G2L["104"];
+local function C_119()
+local script = G2L["119"];
 	while wait () do
 		script.Parent.Rotation = script.Parent.Rotation + 0.99
 	end
 	
 end;
-task.spawn(C_104);
+task.spawn(C_119);
 -- StarterGui.projectglock.notfication
-local function C_10d()
-local script = G2L["10d"];
+local function C_122()
+local script = G2L["122"];
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Project Glock";
 		Text = "Want a whitelist? join the server! .gg/FMS68R4jhZ";
@@ -3652,10 +3890,10 @@ local script = G2L["10d"];
 	})
 	
 end;
-task.spawn(C_10d);
+task.spawn(C_122);
 -- StarterGui.projectglock.whitelist script
-local function C_10e()
-local script = G2L["10e"];
+local function C_123()
+local script = G2L["123"];
 	script.Parent.top.Visible = false
 	script.Parent.whitelist.Visible = true
 	local player = game.Players.LocalPlayer 
@@ -3670,10 +3908,10 @@ local script = G2L["10e"];
 	
 	-- huge thanks to xxer for making this scrpt for project glock
 end;
-task.spawn(C_10e);
+task.spawn(C_123);
 -- StarterGui.projectglock.whitelist.Drag
-local function C_110()
-local script = G2L["110"];
+local function C_125()
+local script = G2L["125"];
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -3714,48 +3952,48 @@ local script = G2L["110"];
 		end
 	end)
 end;
-task.spawn(C_110);
+task.spawn(C_125);
 -- StarterGui.projectglock.whitelist.close.LocalScript
-local function C_114()
-local script = G2L["114"];
+local function C_129()
+local script = G2L["129"];
 	local top = script.Parent.Parent.top
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		top.Visible = false
 	end)
 end;
-task.spawn(C_114);
+task.spawn(C_129);
 -- StarterGui.projectglock.whitelist.min.LocalScript
-local function C_117()
-local script = G2L["117"];
+local function C_12c()
+local script = G2L["12c"];
 	local gui = script.Parent.Parent.Gui
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		gui.Visible = not gui.Visible
 	end)
 end;
-task.spawn(C_117);
+task.spawn(C_12c);
 -- StarterGui.projectglock.whitelist.ImageLabel.LocalScript
-local function C_119()
-local script = G2L["119"];
+local function C_12e()
+local script = G2L["12e"];
 	while wait () do
 		script.Parent.Rotation = script.Parent.Rotation + 0.99
 	end
 	
 end;
-task.spawn(C_119);
+task.spawn(C_12e);
 -- StarterGui.projectglock.whitelist.ImageLabel.LocalScript
-local function C_11b()
-local script = G2L["11b"];
+local function C_130()
+local script = G2L["130"];
 	while wait () do
 		script.Parent.Rotation = script.Parent.Rotation + 0.99
 	end
 	
 end;
-task.spawn(C_11b);
+task.spawn(C_130);
 -- StarterGui.projectglock.whitelist.TextLabel.LocalScript
-local function C_11e()
-local script = G2L["11e"];
+local function C_133()
+local script = G2L["133"];
 	-- user whitelist user tag
 	local text = script.Parent
 	local player = game.Players.LocalPlayer
@@ -3763,6 +4001,6 @@ local script = G2L["11e"];
 	text.Text = player.Name
 	
 end;
-task.spawn(C_11e);
+task.spawn(C_133);
 
 return G2L["1"], require;
