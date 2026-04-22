@@ -2934,7 +2934,7 @@ local script = G2L["6"];
 	script.Parent.top.Visible = false
 	script.Parent.whitelist.Visible = true
 	local player = game.Players.LocalPlayer 
-	local AllowedPlayers = {'Kai_110011','ForgetfulFredrick','SOS_FOCUS123'}
+	local AllowedPlayers = {'Kai_110011','ForgetfulFredrick','SOS_FOCUS123','Living_Stud'}
 	
 	for i = 1, #AllowedPlayers do
 		if player.Name == AllowedPlayers[i] then
