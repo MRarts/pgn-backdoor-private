@@ -19,6 +19,7 @@ G2L["1"]["ResetOnSpawn"] = false;
 
 -- StarterGui.RC7.Title
 G2L["2"] = Instance.new("TextLabel", G2L["1"]);
+G2L["2"]["Active"] = true;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["TextSize"] = 14;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -28,7 +29,7 @@ G2L["2"]["Size"] = UDim2.new(0, 329, 0, 30);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
 G2L["2"]["Text"] = [[]];
 G2L["2"]["Name"] = [[Title]];
-G2L["2"]["Position"] = UDim2.new(0.38655, 0, 0.09295, 0);
+G2L["2"]["Position"] = UDim2.new(0.33847, 0, 0.11873, 0);
 
 
 -- StarterGui.RC7.Title.Logo
