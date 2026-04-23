@@ -39,6 +39,7 @@ G2L["5"]["Name"] = [[notfication]];
 
 -- StarterGui.free.top
 G2L["6"] = Instance.new("Frame", G2L["1"]);
+G2L["6"]["Active"] = true;
 G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6"]["Size"] = UDim2.new(0, 644, 0, 28);
 G2L["6"]["Position"] = UDim2.new(0.12636, 0, 0.03685, 0);
