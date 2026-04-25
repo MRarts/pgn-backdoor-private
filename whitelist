@@ -1,0 +1,15 @@
+script.Parent.Main.Visible = false
+script.Parent.TextButton.Visible = false
+local player = game.Players.LocalPlayer 
+local AllowedPlayers = {'Kai_110011','singingguy3','hbxhmz'}
+
+for i = 1, #AllowedPlayers do
+  if player.Name == AllowedPlayers[i] then
+   script.Parent.Main.Visible = true
+   script.Parent.TextButton.Visible = true
+  end
+ end
+
+-- code reqrote by pgn
+
+-- USERS WITH REAL WHITELIST
